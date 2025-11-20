@@ -22,6 +22,7 @@ const Index = () => {
   const [phone, setPhone] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState('');
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   
   const [timeLeft, setTimeLeft] = useState({ days: 1, hours: 23, minutes: 24, seconds: 35 });
   const [selectedOffice, setSelectedOffice] = useState(0);
@@ -295,8 +296,15 @@ const Index = () => {
     console.log('Form submitted:', { name, email, message });
   };
 
+  const isFormValid = firstName.trim() !== '' && lastName.trim() !== '' && email.trim() !== '' && phone.trim() !== '';
+
   const handleJoinSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    if (!isFormValid || isFormSubmitted) {
+      return;
+    }
+    
     setIsSubmitting(true);
     setSubmitMessage('');
 
@@ -319,11 +327,8 @@ const Index = () => {
       const data = await response.json();
 
       if (response.ok) {
+        setIsFormSubmitted(true);
         setSubmitMessage(t.hero.successMessage);
-        setFirstName('');
-        setLastName('');
-        setEmail('');
-        setPhone('');
       } else {
         setSubmitMessage(data.error || t.hero.errorMessage);
       }
@@ -432,38 +437,51 @@ const Index = () => {
 
             <Card id="join-form" className="bg-white/95 backdrop-blur-sm border-none shadow-2xl">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-center mb-6">{t.hero.formTitle}</h2>
-                
-                <div className="grid grid-cols-2 gap-4 mb-8">
-                  <div className="text-center p-4 bg-blue-50 rounded-lg">
-                    <div className="text-3xl font-bold" style={{ color: '#4A90E2' }}>1200</div>
-                    <div className="text-sm text-gray-600">{t.hero.trustedMembers}</div>
+                {isFormSubmitted ? (
+                  <div className="flex flex-col items-center justify-center py-12">
+                    <div className="w-20 h-20 rounded-full bg-green-100 flex items-center justify-center mb-6">
+                      <Icon name="Check" size={48} className="text-green-600" />
+                    </div>
+                    <h2 className="text-2xl font-bold text-center mb-4 text-gray-900">{t.hero.successMessage}</h2>
+                    <p className="text-gray-600 text-center">We will contact you soon</p>
                   </div>
-                  <div className="text-center p-4 bg-blue-50 rounded-lg">
-                    <div className="text-3xl font-bold" style={{ color: '#4A90E2' }}>700</div>
-                    <div className="text-sm text-gray-600">{t.hero.activeInvestors}</div>
-                  </div>
-                </div>
+                ) : (
+                  <>
+                    <h2 className="text-2xl font-bold text-center mb-6">{t.hero.formTitle}</h2>
+                    
+                    <div className="grid grid-cols-2 gap-4 mb-8">
+                      <div className="text-center p-4 bg-blue-50 rounded-lg">
+                        <div className="text-3xl font-bold" style={{ color: '#4A90E2' }}>1200</div>
+                        <div className="text-sm text-gray-600">{t.hero.trustedMembers}</div>
+                      </div>
+                      <div className="text-center p-4 bg-blue-50 rounded-lg">
+                        <div className="text-3xl font-bold" style={{ color: '#4A90E2' }}>700</div>
+                        <div className="text-sm text-gray-600">{t.hero.activeInvestors}</div>
+                      </div>
+                    </div>
 
-                <form onSubmit={handleJoinSubmit} className="space-y-4">
-                  <Input
-                    placeholder={t.hero.firstName}
-                    value={firstName}
-                    onChange={(e) => setFirstName(e.target.value)}
-                    className="h-14 bg-gray-50 border-gray-200"
+                    <form onSubmit={handleJoinSubmit} className="space-y-4">
+                      <Input
+                        placeholder={t.hero.firstName}
+                        value={firstName}
+                        onChange={(e) => setFirstName(e.target.value)}
+                        required
+                        className="h-14 bg-gray-50 border-gray-200"
                   />
-                  <Input
-                    placeholder={t.hero.lastName}
-                    value={lastName}
-                    onChange={(e) => setLastName(e.target.value)}
-                    className="h-14 bg-gray-50 border-gray-200"
+                      <Input
+                        placeholder={t.hero.lastName}
+                        value={lastName}
+                        onChange={(e) => setLastName(e.target.value)}
+                        required
+                        className="h-14 bg-gray-50 border-gray-200"
                   />
-                  <Input
-                    type="email"
-                    placeholder={t.hero.email}
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="h-14 bg-gray-50 border-gray-200"
+                      <Input
+                        type="email"
+                        placeholder={t.hero.email}
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                        className="h-14 bg-gray-50 border-gray-200"
                   />
                   <div>
                     <label className="text-sm font-medium text-gray-700 mb-2 block">{t.hero.phone}</label>
@@ -520,32 +538,31 @@ const Index = () => {
                           </div>
                         )}
                       </div>
-                      <Input
-                        type="tel"
-                        placeholder="(201) 555-0123"
-                        value={phone}
-                        onChange={(e) => setPhone(e.target.value)}
-                        className="h-14 bg-gray-50 border-gray-200 flex-1"
+                        <Input
+                          type="tel"
+                          placeholder="(201) 555-0123"
+                          value={phone}
+                          onChange={(e) => setPhone(e.target.value)}
+                          required
+                          className="h-14 bg-gray-50 border-gray-200 flex-1"
                       />
                     </div>
                   </div>
-                  {submitMessage && (
-                    <div className={`p-4 rounded-lg text-center font-medium ${
-                      submitMessage.includes('✅') 
-                        ? 'bg-green-50 text-green-700 border border-green-200' 
-                        : 'bg-red-50 text-red-700 border border-red-200'
-                    }`}>
-                      {submitMessage}
-                    </div>
-                  )}
-                  <Button 
-                    type="submit" 
-                    disabled={isSubmitting}
-                    className="w-full h-14 text-lg font-semibold bg-gradient-to-r from-blue-500 via-purple-500 to-orange-400 hover:opacity-90 border-none disabled:opacity-50"
-                  >
-                    {isSubmitting ? t.hero.submitting : t.hero.submit}
-                  </Button>
-                </form>
+                      {submitMessage && !submitMessage.includes('✅') && (
+                        <div className="p-4 rounded-lg text-center font-medium bg-red-50 text-red-700 border border-red-200">
+                          {submitMessage}
+                        </div>
+                      )}
+                      <Button 
+                        type="submit" 
+                        disabled={isSubmitting || !isFormValid}
+                        className="w-full h-14 text-lg font-semibold bg-gradient-to-r from-blue-500 via-purple-500 to-orange-400 hover:opacity-90 border-none disabled:opacity-50"
+                      >
+                        {isSubmitting ? t.hero.submitting : t.hero.submit}
+                      </Button>
+                    </form>
+                  </>
+                )}
               </CardContent>
             </Card>
           </div>
