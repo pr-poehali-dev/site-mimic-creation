@@ -459,6 +459,305 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-20 px-6 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#5B6B8C' }}>
+              Active Traders
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Trade Smarter, Grow Steadier — Envariax AI empowers investors to achieve consistent performance through intelligent automation and adaptive precision analytics.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            <Card className="bg-white border-none shadow-lg hover:shadow-xl transition-all">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <img
+                    src="https://cdn.poehali.dev/projects/dec2b247-100c-4952-8c09-827ed14bdcb9/files/5ed4f10b-2895-4d73-9717-3cd0d34c8b17.jpg"
+                    alt="Minseo Park"
+                    className="w-12 h-12 rounded-full object-cover"
+                  />
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2">
+                      <h3 className="font-bold text-gray-900">Minseo Park</h3>
+                      <Icon name="CheckCircle2" size={16} className="text-blue-500" />
+                    </div>
+                    <p className="text-xs text-gray-500">Daegu, South Korea</p>
+                    <p className="text-xs text-gray-400">Nov 3, 2025</p>
+                  </div>
+                  <div className="flex gap-1">
+                    {[1,2,3,4,5].map(i => <Icon key={i} name="Star" size={14} className="fill-yellow-400 text-yellow-400" />)}
+                  </div>
+                </div>
+                <p className="text-gray-700 text-sm mb-4 leading-relaxed">
+                  Envariax finally gave automation the control it was missing. Execution feels seamless, and the AI reacts faster than any manual setup I've ever used.
+                </p>
+                <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-4 mb-4">
+                  <div className="text-xs text-gray-500 mb-1">TOTAL EARNINGS</div>
+                  <div className="text-3xl font-bold text-green-600">$16 420</div>
+                  <div className="text-xs text-gray-500 mt-2">52% (in past level)</div>
+                </div>
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center gap-2 text-sm text-gray-600">
+                    <Icon name="ThumbsUp" size={16} />
+                    <span>218</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-600">
+                    <Icon name="MessageCircle" size={16} />
+                    <span>14</span>
+                  </div>
+                </div>
+                <Button variant="outline" className="w-full text-blue-600 border-blue-200">
+                  View Profile
+                  <Icon name="ArrowRight" size={16} className="ml-2" />
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white border-none shadow-lg hover:shadow-xl transition-all">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <img
+                    src="https://cdn.poehali.dev/projects/dec2b247-100c-4952-8c09-827ed14bdcb9/files/9e92b089-0a8a-4ca8-b2bc-21a3292c0651.jpg"
+                    alt="Camila Ortega"
+                    className="w-12 h-12 rounded-full object-cover"
+                  />
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2">
+                      <h3 className="font-bold text-gray-900">Camila Ortega</h3>
+                      <Icon name="CheckCircle2" size={16} className="text-blue-500" />
+                    </div>
+                    <p className="text-xs text-gray-500">Valencia, Spain</p>
+                    <p className="text-xs text-gray-400">Oct 27, 2025</p>
+                  </div>
+                  <div className="flex gap-1">
+                    {[1,2,3,4].map(i => <Icon key={i} name="Star" size={14} className="fill-yellow-400 text-yellow-400" />)}
+                    <Icon name="Star" size={14} className="text-gray-300" />
+                  </div>
+                </div>
+                <p className="text-gray-700 text-sm mb-4 leading-relaxed">
+                  Precision and prediction — that's what Envariax delivers. Its algorithms catch shifts before the charts even reflect them.
+                </p>
+                <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-4 mb-4">
+                  <div className="text-xs text-gray-500 mb-1">TOTAL EARNINGS</div>
+                  <div className="text-3xl font-bold text-green-600">$23 580</div>
+                  <div className="text-xs text-gray-500 mt-2">85% (in past level)</div>
+                </div>
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center gap-2 text-sm text-gray-600">
+                    <Icon name="ThumbsUp" size={16} />
+                    <span>97</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-600">
+                    <Icon name="MessageCircle" size={16} />
+                    <span>9</span>
+                  </div>
+                </div>
+                <Button variant="outline" className="w-full text-blue-600 border-blue-200">
+                  View Profile
+                  <Icon name="ArrowRight" size={16} className="ml-2" />
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white border-none shadow-lg hover:shadow-xl transition-all">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <img
+                    src="https://cdn.poehali.dev/projects/dec2b247-100c-4952-8c09-827ed14bdcb9/files/deeaeda7-1d69-4f4f-8ea0-8811be3c7906.jpg"
+                    alt="Henrik Larsen"
+                    className="w-12 h-12 rounded-full object-cover"
+                  />
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2">
+                      <h3 className="font-bold text-gray-900">Henrik Larsen</h3>
+                      <Icon name="CheckCircle2" size={16} className="text-blue-500" />
+                    </div>
+                    <p className="text-xs text-gray-500">Trondheim, Norway</p>
+                    <p className="text-xs text-gray-400">Oct 18, 2025</p>
+                  </div>
+                  <div className="flex gap-1">
+                    {[1,2,3,4].map(i => <Icon key={i} name="Star" size={14} className="fill-yellow-400 text-yellow-400" />)}
+                    <Icon name="StarHalf" size={14} className="fill-yellow-400 text-yellow-400" />
+                  </div>
+                </div>
+                <p className="text-gray-700 text-sm mb-4 leading-relaxed">
+                  Smooth interface, near-zero delay, and intelligence that grows with me. Envariax understands both the data and the trader behind it.
+                </p>
+                <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-4 mb-4">
+                  <div className="text-xs text-gray-500 mb-1">TOTAL EARNINGS</div>
+                  <div className="text-3xl font-bold text-green-600">$15 370</div>
+                  <div className="text-xs text-gray-500 mt-2">73% (in past level)</div>
+                </div>
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center gap-2 text-sm text-gray-600">
+                    <Icon name="ThumbsUp" size={16} />
+                    <span>311</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-600">
+                    <Icon name="MessageCircle" size={16} />
+                    <span>12</span>
+                  </div>
+                </div>
+                <Button variant="outline" className="w-full text-blue-600 border-blue-200">
+                  View Profile
+                  <Icon name="ArrowRight" size={16} className="ml-2" />
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white border-none shadow-lg hover:shadow-xl transition-all">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <img
+                    src="https://cdn.poehali.dev/projects/dec2b247-100c-4952-8c09-827ed14bdcb9/files/040ea146-b403-4222-b0c1-58aaca9d1d17.jpg"
+                    alt="Claire Dubois"
+                    className="w-12 h-12 rounded-full object-cover"
+                  />
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2">
+                      <h3 className="font-bold text-gray-900">Claire Dubois</h3>
+                      <Icon name="CheckCircle2" size={16} className="text-blue-500" />
+                    </div>
+                    <p className="text-xs text-gray-500">Marseille, France</p>
+                    <p className="text-xs text-gray-400">Oct 3, 2025</p>
+                  </div>
+                  <div className="flex gap-1">
+                    {[1,2,3,4].map(i => <Icon key={i} name="Star" size={14} className="fill-yellow-400 text-yellow-400" />)}
+                    <Icon name="StarHalf" size={14} className="fill-yellow-400 text-yellow-400" />
+                  </div>
+                </div>
+                <p className="text-gray-700 text-sm mb-4 leading-relaxed">
+                  The automation feels effortless, and the results speak for themselves. Envariax helped me stabilize my portfolio week after week.
+                </p>
+                <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-4 mb-4">
+                  <div className="text-xs text-gray-500 mb-1">TOTAL EARNINGS</div>
+                  <div className="text-3xl font-bold text-green-600">$10 280</div>
+                  <div className="text-xs text-gray-500 mt-2">68% (in past level)</div>
+                </div>
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center gap-2 text-sm text-gray-600">
+                    <Icon name="ThumbsUp" size={16} />
+                    <span>126</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-600">
+                    <Icon name="MessageCircle" size={16} />
+                    <span>16</span>
+                  </div>
+                </div>
+                <Button variant="outline" className="w-full text-blue-600 border-blue-200">
+                  View Profile
+                  <Icon name="ArrowRight" size={16} className="ml-2" />
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white border-none shadow-lg hover:shadow-xl transition-all">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <img
+                    src="https://cdn.poehali.dev/projects/dec2b247-100c-4952-8c09-827ed14bdcb9/files/e74f91e7-8490-4fdc-ac91-73a0857e2550.jpg"
+                    alt="Daniel Hughes"
+                    className="w-12 h-12 rounded-full object-cover"
+                  />
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2">
+                      <h3 className="font-bold text-gray-900">Daniel Hughes</h3>
+                      <Icon name="CheckCircle2" size={16} className="text-blue-500" />
+                    </div>
+                    <p className="text-xs text-gray-500">Leeds, United Kingdom</p>
+                    <p className="text-xs text-gray-400">Sep 29, 2025</p>
+                  </div>
+                  <div className="flex gap-1">
+                    {[1,2,3,4,5].map(i => <Icon key={i} name="Star" size={14} className="fill-yellow-400 text-yellow-400" />)}
+                  </div>
+                </div>
+                <p className="text-gray-700 text-sm mb-4 leading-relaxed">
+                  Professional design, instant execution, and accuracy that feels surgical. Envariax is built for traders who demand reliability.
+                </p>
+                <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-4 mb-4">
+                  <div className="text-xs text-gray-500 mb-1">TOTAL EARNINGS</div>
+                  <div className="text-3xl font-bold text-green-600">$12 190</div>
+                  <div className="text-xs text-gray-500 mt-2">81% (in past level)</div>
+                </div>
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center gap-2 text-sm text-gray-600">
+                    <Icon name="ThumbsUp" size={16} />
+                    <span>766</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-600">
+                    <Icon name="MessageCircle" size={16} />
+                    <span>10</span>
+                  </div>
+                </div>
+                <Button variant="outline" className="w-full text-blue-600 border-blue-200">
+                  View Profile
+                  <Icon name="ArrowRight" size={16} className="ml-2" />
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white border-none shadow-lg hover:shadow-xl transition-all">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <img
+                    src="https://cdn.poehali.dev/projects/dec2b247-100c-4952-8c09-827ed14bdcb9/files/f00d8a1f-3001-4171-94a5-1ea939052c45.jpg"
+                    alt="Matteo Romano"
+                    className="w-12 h-12 rounded-full object-cover"
+                  />
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2">
+                      <h3 className="font-bold text-gray-900">Matteo Romano</h3>
+                      <Icon name="CheckCircle2" size={16} className="text-blue-500" />
+                    </div>
+                    <p className="text-xs text-gray-500">Milan, Italy</p>
+                    <p className="text-xs text-gray-400">Sep 20, 2025</p>
+                  </div>
+                  <div className="flex gap-1">
+                    {[1,2,3,4].map(i => <Icon key={i} name="Star" size={14} className="fill-yellow-400 text-yellow-400" />)}
+                    <Icon name="StarHalf" size={14} className="fill-yellow-400 text-yellow-400" />
+                  </div>
+                </div>
+                <p className="text-gray-700 text-sm mb-4 leading-relaxed">
+                  Finally, a platform that merges data transparency with real performance. Envariax delivers measurable consistency and absolute trust.
+                </p>
+                <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-4 mb-4">
+                  <div className="text-xs text-gray-500 mb-1">TOTAL EARNINGS</div>
+                  <div className="text-3xl font-bold text-green-600">$14 530</div>
+                  <div className="text-xs text-gray-500 mt-2">80% (in past level)</div>
+                </div>
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center gap-2 text-sm text-gray-600">
+                    <Icon name="ThumbsUp" size={16} />
+                    <span>1756</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-600">
+                    <Icon name="MessageCircle" size={16} />
+                    <span>11</span>
+                  </div>
+                </div>
+                <Button variant="outline" className="w-full text-blue-600 border-blue-200">
+                  View Profile
+                  <Icon name="ArrowRight" size={16} className="ml-2" />
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center">
+            <p className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
+              Join thousands of investors worldwide who trust Envariax to automate, analyze, and elevate their digital success.
+            </p>
+            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 h-14 text-lg font-semibold">
+              JOIN NOW
+              <Icon name="Rocket" size={20} className="ml-2" />
+            </Button>
+          </div>
+        </div>
+      </section>
+
       <section id="about" className="py-20 px-6 bg-card">
         <div className="container mx-auto">
           <div className="max-w-3xl mx-auto text-center mb-16">
