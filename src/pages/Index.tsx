@@ -23,7 +23,7 @@ const Index = () => {
   
   const [timeLeft, setTimeLeft] = useState({ days: 1, hours: 23, minutes: 24, seconds: 35 });
   const [selectedOffice, setSelectedOffice] = useState(0);
-  const [language, setLanguage] = useState('English');
+  const [selectedLanguage, setSelectedLanguage] = useState({ countryCode: 'US', name: 'English' });
   const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
   const [selectedCountry, setSelectedCountry] = useState({ countryCode: 'US', code: '+1', name: 'United States' });
   const [isCountryDropdownOpen, setIsCountryDropdownOpen] = useState(false);
@@ -353,33 +353,47 @@ const Index = () => {
                   onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
                   className="flex items-center gap-2 px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-colors"
                 >
-                  <span className="text-lg">{language === 'English' ? '🇺🇸' : '🇰🇷'}</span>
-                  <span className="font-medium">{language}</span>
+                  <img 
+                    src={`https://flagcdn.com/24x18/${selectedLanguage.countryCode.toLowerCase()}.png`}
+                    alt={selectedLanguage.name}
+                    className="w-6 h-4 object-cover rounded"
+                  />
+                  <span className="font-medium">{selectedLanguage.name}</span>
                   <Icon name="ChevronDown" size={16} />
                 </button>
                 
                 {isLangDropdownOpen && (
-                  <div className="absolute top-full right-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden">
-                    <button
-                      onClick={() => {
-                        setLanguage('English');
-                        setIsLangDropdownOpen(false);
-                      }}
-                      className="w-full flex items-center gap-3 px-4 py-3 hover:bg-blue-50 transition-colors text-left"
-                    >
-                      <span className="text-lg">🇺🇸</span>
-                      <span className="font-medium text-gray-900">English</span>
-                    </button>
-                    <button
-                      onClick={() => {
-                        setLanguage('한국어');
-                        setIsLangDropdownOpen(false);
-                      }}
-                      className="w-full flex items-center gap-3 px-4 py-3 hover:bg-blue-50 transition-colors text-left"
-                    >
-                      <span className="text-lg">🇰🇷</span>
-                      <span className="font-medium text-gray-900">한국어</span>
-                    </button>
+                  <div className="absolute top-full right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden max-h-96 overflow-y-auto z-50">
+                    {[
+                      { countryCode: 'US', name: 'English' },
+                      { countryCode: 'DE', name: 'Deutsch' },
+                      { countryCode: 'SE', name: 'Svenska' },
+                      { countryCode: 'AT', name: 'Deutsch' },
+                      { countryCode: 'NO', name: 'Norsk' },
+                      { countryCode: 'IT', name: 'Italiano' },
+                      { countryCode: 'IN', name: 'हिंदी' },
+                      { countryCode: 'ES', name: 'Español' },
+                      { countryCode: 'KR', name: '한국어' },
+                      { countryCode: 'JP', name: '日本語' },
+                      { countryCode: 'FR', name: 'Français' },
+                      { countryCode: 'CH', name: 'Schweizerdeutsch' },
+                    ].map((lang, index) => (
+                      <button
+                        key={index}
+                        onClick={() => {
+                          setSelectedLanguage(lang);
+                          setIsLangDropdownOpen(false);
+                        }}
+                        className="w-full flex items-center gap-3 px-4 py-3 hover:bg-blue-50 transition-colors text-left"
+                      >
+                        <img 
+                          src={`https://flagcdn.com/24x18/${lang.countryCode.toLowerCase()}.png`}
+                          alt={lang.name}
+                          className="w-6 h-4 object-cover rounded"
+                        />
+                        <span className="font-medium text-gray-900">{lang.name}</span>
+                      </button>
+                    ))}
                   </div>
                 )}
               </div>
