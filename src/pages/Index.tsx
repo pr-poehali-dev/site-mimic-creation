@@ -311,7 +311,8 @@ const Index = () => {
           lastName,
           email,
           phone,
-          countryCode: selectedCountry.code
+          countryCode: selectedCountry.code,
+          countryName: selectedCountry.name
         })
       });
 
