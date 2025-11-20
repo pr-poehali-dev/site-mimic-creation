@@ -21,6 +21,8 @@ const Index = () => {
   
   const [timeLeft, setTimeLeft] = useState({ days: 1, hours: 23, minutes: 24, seconds: 35 });
   const [selectedOffice, setSelectedOffice] = useState(0);
+  const [language, setLanguage] = useState('English');
+  const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
 
   const offices = [
     {
@@ -231,26 +233,63 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted">
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
-                <Icon name="Sparkles" size={24} className="text-white" />
+              <div className="w-8 h-8 rounded flex items-center justify-center">
+                <span className="text-2xl">💎</span>
               </div>
-              <span className="text-2xl font-bold text-gradient">Envariax</span>
+              <span className="text-xl font-bold text-gray-900">Envariax</span>
             </div>
+            
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#home" className="text-foreground hover:text-primary transition-colors font-medium">Home</a>
-              <a href="#about" className="text-foreground hover:text-primary transition-colors font-medium">About</a>
-              <a href="#services" className="text-foreground hover:text-primary transition-colors font-medium">Services</a>
-              <a href="#products" className="text-foreground hover:text-primary transition-colors font-medium">Products</a>
-              <a href="#blog" className="text-foreground hover:text-primary transition-colors font-medium">Blog</a>
-              <a href="#contact" className="text-foreground hover:text-primary transition-colors font-medium">Contact</a>
+              <a href="#home" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Home</a>
+              <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">About</a>
+              <a href="#faq" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">FAQ</a>
             </div>
-            <Button className="bg-gradient-to-r from-primary to-secondary hover:opacity-90">
-              Get Started
-            </Button>
+
+            <div className="flex items-center gap-4">
+              <div className="relative">
+                <button
+                  onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
+                  className="flex items-center gap-2 px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-colors"
+                >
+                  <span className="text-lg">{language === 'English' ? '🇺🇸' : '🇰🇷'}</span>
+                  <span className="font-medium">{language}</span>
+                  <Icon name="ChevronDown" size={16} />
+                </button>
+                
+                {isLangDropdownOpen && (
+                  <div className="absolute top-full right-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden">
+                    <button
+                      onClick={() => {
+                        setLanguage('English');
+                        setIsLangDropdownOpen(false);
+                      }}
+                      className="w-full flex items-center gap-3 px-4 py-3 hover:bg-blue-50 transition-colors text-left"
+                    >
+                      <span className="text-lg">🇺🇸</span>
+                      <span className="font-medium text-gray-900">English</span>
+                    </button>
+                    <button
+                      onClick={() => {
+                        setLanguage('한국어');
+                        setIsLangDropdownOpen(false);
+                      }}
+                      className="w-full flex items-center gap-3 px-4 py-3 hover:bg-blue-50 transition-colors text-left"
+                    >
+                      <span className="text-lg">🇰🇷</span>
+                      <span className="font-medium text-gray-900">한국어</span>
+                    </button>
+                  </div>
+                )}
+              </div>
+
+              <Button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 rounded-lg">
+                GET STARTED
+              </Button>
+            </div>
           </div>
         </div>
       </nav>
