@@ -145,6 +145,156 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-20 px-6 bg-white">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-4xl lg:text-5xl font-bold text-center mb-6" style={{ color: '#5B6B8C' }}>
+            Why Traders Choose Envariax?
+          </h2>
+          <p className="text-center text-lg text-gray-600 mb-16 max-w-3xl mx-auto leading-relaxed">
+            Envariax equips forward-thinking investors with a unified ecosystem built on precision engineering — merging adaptive AI automation, military-grade protection, and expert-driven insights to deliver seamless performance across every financial frontier.
+          </p>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            <div className="space-y-6">
+              <Card className="bg-white border border-gray-200 shadow-sm hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center flex-shrink-0">
+                      <Icon name="Check" size={24} className="text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold mb-3 text-gray-900">
+                        Predictive Intelligence That Sees Ahead
+                      </h3>
+                      <p className="text-gray-600 leading-relaxed">
+                        Outsmart volatility through Envariax's self-evolving AI models, designed to read live data streams, forecast directional swings, and uncover high-value opportunities before they reach the spotlight. Anticipation becomes your edge — every decision powered by data that thinks forward.
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border border-gray-200 shadow-sm hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center flex-shrink-0">
+                      <Icon name="Check" size={24} className="text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold mb-3 text-gray-900">
+                        Bulletproof Asset Protection
+                      </h3>
+                      <p className="text-gray-600 leading-relaxed">
+                        Every signal, order, and transaction flows through layered encryption, isolated network protocols, and continuous AI surveillance, ensuring your capital stays protected under any market condition. With Envariax, digital security isn't an add-on — it's the foundation.
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border border-gray-200 shadow-sm hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center flex-shrink-0">
+                      <Icon name="Check" size={24} className="text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold mb-3 text-gray-900">
+                        Around-the-Clock Global Expertise
+                      </h3>
+                      <p className="text-gray-600 leading-relaxed">
+                        Gain access to a worldwide network of multilingual professionals ready to assist at any moment. From strategic refinement to technical calibration, Envariax's support experts ensure your trading experience remains efficient, stable, and future-proof.
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border border-gray-200 shadow-sm hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center flex-shrink-0">
+                      <Icon name="Check" size={24} className="text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold mb-3 text-gray-900">
+                        Lightning-Fast Execution Engine
+                      </h3>
+                      <p className="text-gray-600 leading-relaxed">
+                        When milliseconds define opportunity, Envariax delivers. Our ultra-responsive trading infrastructure executes orders instantly and synchronizes liquidity in real time — so you never miss a move when the market turns.
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Button 
+                size="lg" 
+                className="mt-6 bg-white text-gray-900 border-2 border-gray-900 hover:bg-gray-50"
+              >
+                <Icon name="Play" size={18} className="mr-2" />
+                Start Trading
+              </Button>
+            </div>
+
+            <div className="lg:sticky lg:top-32">
+              <Card className="bg-gradient-to-br from-green-50 to-blue-50 border-none shadow-xl">
+                <CardContent className="p-6">
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="flex items-center gap-2">
+                      <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
+                      <span className="font-semibold text-gray-900">Live Trading Dashboard</span>
+                    </div>
+                    <div className="px-4 py-1 bg-green-100 text-green-700 rounded-full text-sm font-bold flex items-center gap-1">
+                      <Icon name="TrendingUp" size={16} />
+                      +122%
+                    </div>
+                  </div>
+                  
+                  <div className="bg-white rounded-2xl p-6 mb-4 shadow-lg">
+                    <div className="relative h-64">
+                      <svg className="w-full h-full" viewBox="0 0 400 200" preserveAspectRatio="none">
+                        <defs>
+                          <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stopColor="#10B981" stopOpacity="0.3" />
+                            <stop offset="100%" stopColor="#10B981" stopOpacity="0.05" />
+                          </linearGradient>
+                        </defs>
+                        <path
+                          d="M 0 180 Q 50 160, 100 140 T 200 100 T 300 60 T 400 40"
+                          fill="url(#chartGradient)"
+                          stroke="#10B981"
+                          strokeWidth="3"
+                        />
+                        <circle cx="400" cy="40" r="6" fill="#10B981" />
+                      </svg>
+                      <div className="absolute top-4 left-4 px-3 py-1 bg-blue-500 text-white text-xs font-bold rounded">
+                        BTC
+                      </div>
+                      <div className="absolute top-4 right-4 px-3 py-1 bg-yellow-400 text-gray-900 text-xs font-bold rounded">
+                        HOLD
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-4 shadow-sm">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
+                        <Icon name="Check" size={20} className="text-green-600" />
+                      </div>
+                      <div className="flex-1">
+                        <div className="font-semibold text-gray-900">Executed <span className="font-bold">BTC/USDT</span> trade</div>
+                        <div className="text-sm text-gray-500">2m ago</div>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="about" className="py-20 px-6 bg-card">
         <div className="container mx-auto">
           <div className="max-w-3xl mx-auto text-center mb-16">
