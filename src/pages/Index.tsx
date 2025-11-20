@@ -1644,40 +1644,45 @@ const Index = () => {
               </p>
             </div>
             <div>
-              <h4 className="font-semibold mb-4 text-lg">Company</h4>
+              <h4 className="font-semibold mb-4 text-lg">QUICK LINKS</h4>
               <ul className="space-y-3">
                 <li><a href="#home" className="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Advantages</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Testimonials</a></li>
                 <li><a href="#faq" className="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Careers</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Partners</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4 text-lg">Resources</h4>
+              <h4 className="font-semibold mb-4 text-lg">RESOURCES</h4>
               <ul className="space-y-3">
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Trading Guide</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Security</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Support</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">API Docs</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4 text-lg">Connect</h4>
-              <div className="flex space-x-4 mb-6">
-                <a href="#" className="w-10 h-10 rounded-lg bg-gray-800 hover:bg-gray-700 flex items-center justify-center transition-colors">
-                  <Icon name="Twitter" size={20} />
-                </a>
-                <a href="#" className="w-10 h-10 rounded-lg bg-gray-800 hover:bg-gray-700 flex items-center justify-center transition-colors">
-                  <Icon name="Linkedin" size={20} />
-                </a>
-                <a href="#" className="w-10 h-10 rounded-lg bg-gray-800 hover:bg-gray-700 flex items-center justify-center transition-colors">
-                  <Icon name="MessageCircle" size={20} />
-                </a>
+              <h4 className="font-semibold mb-4 text-lg">CONTACT</h4>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center flex-shrink-0">
+                    <Icon name="Headphones" size={20} className="text-blue-400" />
+                  </div>
+                  <div>
+                    <div className="text-sm text-gray-400 mb-1">SUPPORT</div>
+                    <div className="text-white font-medium">24/7 Available</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center flex-shrink-0">
+                    <Icon name="Globe" size={20} className="text-blue-400" />
+                  </div>
+                  <div>
+                    <div className="text-sm text-gray-400 mb-1">COVERAGE</div>
+                    <div className="text-white font-medium">150+ Countries</div>
+                  </div>
+                </div>
               </div>
-              <p className="text-gray-400 text-sm">
-                info@envariax.com<br />
-                +1 (469) 868 4562
-              </p>
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
