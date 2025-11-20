@@ -23,50 +23,50 @@ const Index = () => {
   const [selectedOffice, setSelectedOffice] = useState(0);
   const [language, setLanguage] = useState('English');
   const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
-  const [selectedCountry, setSelectedCountry] = useState({ flag: '🇺🇸', code: '+1', name: 'United States' });
+  const [selectedCountry, setSelectedCountry] = useState({ countryCode: 'US', code: '+1', name: 'United States' });
   const [isCountryDropdownOpen, setIsCountryDropdownOpen] = useState(false);
   const [countrySearchQuery, setCountrySearchQuery] = useState('');
 
   const countries = [
-    { flag: '🇺🇸', code: '+1', name: 'United States' },
-    { flag: '🇨🇦', code: '+1', name: 'Canada' },
-    { flag: '🇲🇽', code: '+52', name: 'Mexico' },
-    { flag: '🇯🇲', code: '+1876', name: 'Jamaica' },
-    { flag: '🇹🇹', code: '+1868', name: 'Trinidad and Tobago' },
-    { flag: '🇧🇷', code: '+55', name: 'Brazil' },
-    { flag: '🇦🇷', code: '+54', name: 'Argentina' },
-    { flag: '🇨🇱', code: '+56', name: 'Chile' },
-    { flag: '🇬🇧', code: '+44', name: 'United Kingdom' },
-    { flag: '🇮🇪', code: '+353', name: 'Ireland' },
-    { flag: '🇫🇷', code: '+33', name: 'France' },
-    { flag: '🇩🇪', code: '+49', name: 'Germany' },
-    { flag: '🇪🇸', code: '+34', name: 'Spain' },
-    { flag: '🇮🇹', code: '+39', name: 'Italy' },
-    { flag: '🇳🇱', code: '+31', name: 'Netherlands' },
-    { flag: '🇧🇪', code: '+32', name: 'Belgium' },
-    { flag: '🇨🇭', code: '+41', name: 'Switzerland' },
-    { flag: '🇦🇹', code: '+43', name: 'Austria' },
-    { flag: '🇳🇴', code: '+47', name: 'Norway' },
-    { flag: '🇸🇪', code: '+46', name: 'Sweden' },
-    { flag: '🇩🇰', code: '+45', name: 'Denmark' },
-    { flag: '🇫🇮', code: '+358', name: 'Finland' },
-    { flag: '🇵🇱', code: '+48', name: 'Poland' },
-    { flag: '🇷🇺', code: '+7', name: 'Russia' },
-    { flag: '🇯🇵', code: '+81', name: 'Japan' },
-    { flag: '🇰🇷', code: '+82', name: 'South Korea' },
-    { flag: '🇨🇳', code: '+86', name: 'China' },
-    { flag: '🇮🇳', code: '+91', name: 'India' },
-    { flag: '🇦🇺', code: '+61', name: 'Australia' },
-    { flag: '🇳🇿', code: '+64', name: 'New Zealand' },
-    { flag: '🇸🇬', code: '+65', name: 'Singapore' },
-    { flag: '🇲🇾', code: '+60', name: 'Malaysia' },
-    { flag: '🇹🇭', code: '+66', name: 'Thailand' },
-    { flag: '🇵🇭', code: '+63', name: 'Philippines' },
-    { flag: '🇮🇩', code: '+62', name: 'Indonesia' },
-    { flag: '🇻🇳', code: '+84', name: 'Vietnam' },
-    { flag: '🇦🇪', code: '+971', name: 'United Arab Emirates' },
-    { flag: '🇸🇦', code: '+966', name: 'Saudi Arabia' },
-    { flag: '🇿🇦', code: '+27', name: 'South Africa' },
+    { countryCode: 'US', code: '+1', name: 'United States' },
+    { countryCode: 'CA', code: '+1', name: 'Canada' },
+    { countryCode: 'MX', code: '+52', name: 'Mexico' },
+    { countryCode: 'JM', code: '+1876', name: 'Jamaica' },
+    { countryCode: 'TT', code: '+1868', name: 'Trinidad and Tobago' },
+    { countryCode: 'BR', code: '+55', name: 'Brazil' },
+    { countryCode: 'AR', code: '+54', name: 'Argentina' },
+    { countryCode: 'CL', code: '+56', name: 'Chile' },
+    { countryCode: 'GB', code: '+44', name: 'United Kingdom' },
+    { countryCode: 'IE', code: '+353', name: 'Ireland' },
+    { countryCode: 'FR', code: '+33', name: 'France' },
+    { countryCode: 'DE', code: '+49', name: 'Germany' },
+    { countryCode: 'ES', code: '+34', name: 'Spain' },
+    { countryCode: 'IT', code: '+39', name: 'Italy' },
+    { countryCode: 'NL', code: '+31', name: 'Netherlands' },
+    { countryCode: 'BE', code: '+32', name: 'Belgium' },
+    { countryCode: 'CH', code: '+41', name: 'Switzerland' },
+    { countryCode: 'AT', code: '+43', name: 'Austria' },
+    { countryCode: 'NO', code: '+47', name: 'Norway' },
+    { countryCode: 'SE', code: '+46', name: 'Sweden' },
+    { countryCode: 'DK', code: '+45', name: 'Denmark' },
+    { countryCode: 'FI', code: '+358', name: 'Finland' },
+    { countryCode: 'PL', code: '+48', name: 'Poland' },
+    { countryCode: 'RU', code: '+7', name: 'Russia' },
+    { countryCode: 'JP', code: '+81', name: 'Japan' },
+    { countryCode: 'KR', code: '+82', name: 'South Korea' },
+    { countryCode: 'CN', code: '+86', name: 'China' },
+    { countryCode: 'IN', code: '+91', name: 'India' },
+    { countryCode: 'AU', code: '+61', name: 'Australia' },
+    { countryCode: 'NZ', code: '+64', name: 'New Zealand' },
+    { countryCode: 'SG', code: '+65', name: 'Singapore' },
+    { countryCode: 'MY', code: '+60', name: 'Malaysia' },
+    { countryCode: 'TH', code: '+66', name: 'Thailand' },
+    { countryCode: 'PH', code: '+63', name: 'Philippines' },
+    { countryCode: 'ID', code: '+62', name: 'Indonesia' },
+    { countryCode: 'VN', code: '+84', name: 'Vietnam' },
+    { countryCode: 'AE', code: '+971', name: 'United Arab Emirates' },
+    { countryCode: 'SA', code: '+966', name: 'Saudi Arabia' },
+    { countryCode: 'ZA', code: '+27', name: 'South Africa' },
   ];
 
   const filteredCountries = countries.filter(country =>
@@ -418,7 +418,11 @@ const Index = () => {
                           onClick={() => setIsCountryDropdownOpen(!isCountryDropdownOpen)}
                           className="flex items-center gap-2 px-3 h-14 bg-gray-50 border border-gray-200 rounded-md hover:bg-gray-100 transition-colors"
                         >
-                          <span className="text-lg">{selectedCountry.flag}</span>
+                          <img 
+                            src={`https://flagcdn.com/24x18/${selectedCountry.countryCode.toLowerCase()}.png`}
+                            alt={selectedCountry.name}
+                            className="w-6 h-4 object-cover rounded"
+                          />
                           <span className="text-sm font-medium">{selectedCountry.code}</span>
                           <Icon name="ChevronDown" size={16} className="text-gray-500" />
                         </button>
@@ -446,7 +450,11 @@ const Index = () => {
                                   className="w-full flex items-center justify-between px-4 py-3 hover:bg-blue-50 transition-colors text-left"
                                 >
                                   <div className="flex items-center gap-3">
-                                    <span className="text-lg">{country.flag}</span>
+                                    <img 
+                                      src={`https://flagcdn.com/24x18/${country.countryCode.toLowerCase()}.png`}
+                                      alt={country.name}
+                                      className="w-6 h-4 object-cover rounded"
+                                    />
                                     <span className="text-sm font-medium text-gray-900">{country.name}</span>
                                   </div>
                                   <span className="text-sm text-gray-500 font-medium">{country.code}</span>
