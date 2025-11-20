@@ -87,6 +87,27 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
         cur = conn.cursor()
         
         cur.execute("""
+            SELECT id FROM leads 
+            WHERE country_code = %s AND phone = %s
+            LIMIT 1
+        """, (country_code, phone))
+        
+        existing_lead = cur.fetchone()
+        
+        if existing_lead:
+            cur.close()
+            if conn:
+                conn.close()
+            return {
+                'statusCode': 400,
+                'headers': {
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*'
+                },
+                'body': json.dumps({'error': 'This phone number has already been registered'})
+            }
+        
+        cur.execute("""
             INSERT INTO leads (first_name, last_name, email, phone, country_code, country_name)
             VALUES (%s, %s, %s, %s, %s, %s)
             RETURNING id

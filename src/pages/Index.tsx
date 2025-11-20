@@ -330,7 +330,11 @@ const Index = () => {
         setIsFormSubmitted(true);
         setSubmitMessage(t.hero.successMessage);
       } else {
-        setSubmitMessage(data.error || t.hero.errorMessage);
+        if (data.error && data.error.includes('already been registered')) {
+          setSubmitMessage(t.hero.duplicatePhoneError);
+        } else {
+          setSubmitMessage(data.error || t.hero.errorMessage);
+        }
       }
     } catch (error) {
       setSubmitMessage(t.hero.errorMessage);

@@ -21,7 +21,8 @@ export const translations = {
       submit: 'BEGIN NOW',
       submitting: 'SUBMITTING...',
       successMessage: '✅ Application submitted successfully! We will contact you soon.',
-      errorMessage: '✖ Failed to submit application. Please try again.'
+      errorMessage: '✖ Failed to submit application. Please try again.',
+      duplicatePhoneError: '✖ This phone number has already been registered.'
     },
     whyChoose: {
       title: 'Why Traders Choose Envariax?',
@@ -126,7 +127,7 @@ export const translations = {
   },
   de: {
     nav: { home: 'Startseite', faq: 'FAQ', getStarted: 'JETZT STARTEN' },
-    hero: { title: 'Intelligenter Handel', volume: '980M+', description: 'Erleben Sie die Evolution', rating: '4.9/5', reviews: 'Basierend auf 12.847 Bewertungen', formTitle: 'Exklusiven Zugang', trustedMembers: 'Mitglieder', activeInvestors: 'Aktive Investoren', firstName: 'Vorname', lastName: 'Nachname', email: 'beispiel@gmail.com', phone: 'Telefon', submit: 'JETZT BEGINNEN', submitting: 'WIRD GESENDET...', successMessage: '✅ Antrag erfolgreich!', errorMessage: '✖ Antrag fehlgeschlagen' },
+    hero: { title: 'Intelligenter Handel', volume: '980M+', description: 'Erleben Sie die Evolution', rating: '4.9/5', reviews: 'Basierend auf 12.847 Bewertungen', formTitle: 'Exklusiven Zugang', trustedMembers: 'Mitglieder', activeInvestors: 'Aktive Investoren', firstName: 'Vorname', lastName: 'Nachname', email: 'beispiel@gmail.com', phone: 'Telefon', submit: 'JETZT BEGINNEN', submitting: 'WIRD GESENDET...', successMessage: '✅ Antrag erfolgreich!', errorMessage: '✖ Antrag fehlgeschlagen', duplicatePhoneError: '✖ Diese Telefonnummer wurde bereits registriert.' },
     whyChoose: { title: 'Warum Envariax?', description: 'Envariax stattet Investoren aus', feature1Title: 'Intelligenz', feature1Desc: 'Durch AI', feature2Title: 'Globale Expertise', feature2Desc: 'Weltweites Netzwerk', feature3Title: 'Schnelle Ausfuhrung', feature3Desc: 'Millisekunden zahlen', startTrading: 'Handel Starten' },
     liveTrading: { badge: 'EXPERTEN', title: 'Live-Handel', subtitle: 'Echtzeit-Markt', liveDashboard: 'Live-Dashboard', executedTrade: 'BTC/USDT-Handel', ago: 'vor' },
     features: { badge: 'VERTRAUENSWURDIG', title: 'Wie Envariax?', description: 'Uber Grenzen hinaus', feature1Title: 'Sicherheit', feature1Desc: 'Ihr Kapital', feature2Title: 'Ultra-Schnell', feature2Desc: 'In der Welt', learnMore: 'Mehr Erfahren', ctaText: 'Bereit?', getStartedNow: 'JETZT STARTEN' },
@@ -138,7 +139,7 @@ export const translations = {
   },
   sv: {
     nav: { home: 'Hem', faq: 'FAQ', getStarted: 'KOM IGANG' },
-    hero: { title: 'Intelligenta Affarer', volume: '980M+', description: 'Upplev utvecklingen', rating: '4.9/5', reviews: 'Baserat pa 12 847 recensioner', formTitle: 'Fa Exklusiv Atkomst', trustedMembers: 'Betrodda Medlemmar', activeInvestors: 'Aktiva Investerare', firstName: 'Fornamn', lastName: 'Efternamn', email: 'exempel@gmail.com', phone: 'Telefon', submit: 'BORJA NU', submitting: 'SKICKAR...', successMessage: '✅ Ansokan skickad!', errorMessage: '✖ Kunde inte skicka' },
+    hero: { title: 'Intelligenta Affarer', volume: '980M+', description: 'Upplev utvecklingen', rating: '4.9/5', reviews: 'Baserat pa 12 847 recensioner', formTitle: 'Fa Exklusiv Atkomst', trustedMembers: 'Betrodda Medlemmar', activeInvestors: 'Aktiva Investerare', firstName: 'Fornamn', lastName: 'Efternamn', email: 'exempel@gmail.com', phone: 'Telefon', submit: 'BORJA NU', submitting: 'SKICKAR...', successMessage: '✅ Ansokan skickad!', errorMessage: '✖ Kunde inte skicka', duplicatePhoneError: '✖ Detta telefonnummer har redan registrerats.' },
     whyChoose: { title: 'Varfor Envariax?', description: 'Envariax utrustar investerare', feature1Title: 'Intelligens', feature1Desc: 'Genom AI', feature2Title: 'Global Expertis', feature2Desc: 'Varldsomspaннande natverk', feature3Title: 'Blixtsnabb', feature3Desc: 'Millisekunder', startTrading: 'Borja Handla' },
     liveTrading: { badge: 'EXPERTER', title: 'Live Handel', subtitle: 'Realtidsmarknad', liveDashboard: 'Live Dashboard', executedTrade: 'BTC/USDT-handel', ago: 'sedan' },
     features: { badge: 'PALITLIG', title: 'Hur Envariax?', description: 'Ga bortom granser', feature1Title: 'Sakerhet', feature1Desc: 'Ditt kapital', feature2Title: 'Ultrahog', feature2Desc: 'I handelsvarлden', learnMore: 'Las Mer', ctaText: 'Redo?', getStartedNow: 'KOM IGANG NU' },
