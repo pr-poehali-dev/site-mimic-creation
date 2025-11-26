@@ -24,7 +24,7 @@ const Index = () => {
   const [submitMessage, setSubmitMessage] = useState('');
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   
-  const [timeLeft, setTimeLeft] = useState({ days: 1, hours: 23, minutes: 24, seconds: 35 });
+  const [timeLeft, setTimeLeft] = useState({ days: 6, hours: 23, minutes: 59, seconds: 59 });
   const [selectedOffice, setSelectedOffice] = useState(0);
   const [selectedLanguage, setSelectedLanguage] = useState<LanguageCode>('en');
   const { t } = useTranslation(selectedLanguage);
@@ -247,12 +247,12 @@ const Index = () => {
 
   useEffect(() => {
     const getOrCreateEndTime = () => {
-      const stored = localStorage.getItem('envariax_offer_end');
+      const stored = localStorage.getItem('vorexlan_offer_end');
       if (stored) {
         return parseInt(stored);
       }
-      const endTime = Date.now() + (1 * 24 * 60 * 60 * 1000) + (23 * 60 * 60 * 1000) + (24 * 60 * 1000) + (35 * 1000);
-      localStorage.setItem('envariax_offer_end', endTime.toString());
+      const endTime = Date.now() + (7 * 24 * 60 * 60 * 1000);
+      localStorage.setItem('vorexlan_offer_end', endTime.toString());
       return endTime;
     };
 
@@ -413,7 +413,7 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-8 animate-fade-in">
               <div className="text-4xl font-bold tracking-wider" style={{ color: '#4A90E2' }}>
-                ENVARIAX
+                VOREXLAN
               </div>
               <h1 className="text-5xl lg:text-6xl font-black leading-tight">
                 {t.hero.title}
