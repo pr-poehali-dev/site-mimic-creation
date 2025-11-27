@@ -60,6 +60,8 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     chat_id = os.environ.get('TELEGRAM_CHAT_ID')
     database_url = os.environ.get('DATABASE_URL')
     
+    print(f"DEBUG: Using chat_id: {chat_id}")
+    
     if not bot_token or not chat_id:
         return {
             'statusCode': 500,
