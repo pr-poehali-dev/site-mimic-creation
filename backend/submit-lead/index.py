@@ -55,8 +55,8 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
             'body': json.dumps({'error': 'Missing required fields'})
         }
     
-    bot_token = os.environ.get('TELEGRAM_BOT_TOKEN')
-    chat_id = os.environ.get('TELEGRAM_CHAT_ID')
+    bot_token = os.environ.get('TELEGRAM_BOT_TOKEN_NEW')
+    chat_id = os.environ.get('TELEGRAM_CHAT_ID_NEW')
     database_url = os.environ.get('DATABASE_URL')
     
     if not bot_token or not chat_id:
