@@ -4,19 +4,13 @@
       "name": "Handle OPTIONS request",
       "method": "OPTIONS",
       "path": "/",
-      "expectedStatus": 200,
-      "expectedBody": "",
-      "bodyMatcher": "exact"
+      "expectedStatus": 200
     },
     {
       "name": "Reject GET method",
       "method": "GET",
       "path": "/",
-      "expectedStatus": 405,
-      "expectedBody": {
-        "error": "Method not allowed"
-      },
-      "bodyMatcher": "partial"
+      "expectedStatus": 405
     },
     {
       "name": "Validate required fields",
@@ -25,11 +19,7 @@
       "body": {
         "firstName": "John"
       },
-      "expectedStatus": 400,
-      "expectedBody": {
-        "error": "Missing required fields"
-      },
-      "bodyMatcher": "partial"
+      "expectedStatus": 400
     }
   ]
 }

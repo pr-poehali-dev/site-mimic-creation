@@ -11,7 +11,6 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     Args: event with httpMethod, body containing firstName, lastName, email, phone, countryCode, countryName
           context with request_id
     Returns: HTTP response with success status
-    Updated: 2025-11-27
     '''
     method: str = event.get('httpMethod', 'GET')
     
@@ -59,8 +58,6 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     bot_token = os.environ.get('TELEGRAM_BOT_TOKEN')
     chat_id = os.environ.get('TELEGRAM_CHAT_ID')
     database_url = os.environ.get('DATABASE_URL')
-    
-    print(f"DEBUG: Using chat_id: {chat_id}")
     
     if not bot_token or not chat_id:
         return {
