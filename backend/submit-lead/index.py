@@ -45,6 +45,10 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     country_code = body_data.get('countryCode', '')
     country_name = body_data.get('countryName', '')
     
+    request_context = event.get('requestContext', {})
+    identity = request_context.get('identity', {})
+    ip_address = identity.get('sourceIp', 'Unknown')
+    
     if not all([first_name, last_name, email, phone, country_name]):
         return {
             'statusCode': 400,
@@ -141,7 +145,8 @@ Name: {first_name}
 Last name: {last_name}
 Email: {email}
 Phone number: {country_code} {phone}
-Country: {country_name}"""
+Country: {country_name}
+IP address: {ip_address}"""
     
     telegram_url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
     data = urllib.parse.urlencode({
