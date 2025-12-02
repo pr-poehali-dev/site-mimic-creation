@@ -1,21 +1,55 @@
-# Iroxivor Official - robots.txt
+# Torexian Official - robots.txt
+# https://torexian-official.com
+
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Sogou
+Allow: /
+Crawl-delay: 2
+
+User-agent: Exabot
+Allow: /
+Crawl-delay: 2
+
+User-agent: facebookexternalhit
 Allow: /
 
 User-agent: Twitterbot
 Allow: /
 
-User-agent: facebookexternalhit
+User-agent: LinkedInBot
 Allow: /
 
 User-agent: *
 Allow: /
+Crawl-delay: 2
 
 # Sitemaps
-Sitemap: https://iroxivor-official.com/sitemap.xml
+Sitemap: https://torexian-official.com/sitemap.xml
 
-# Crawl-delay for respectful bots
-Crawl-delay: 1
+# Disallow admin/private areas (if any)
+Disallow: /api/
+Disallow: /admin/
+Disallow: /*.json$
