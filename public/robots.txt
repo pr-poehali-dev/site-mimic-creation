@@ -1,5 +1,5 @@
-# Lorviatex Official - robots.txt
-# https://lorviatex-official.com
+# Olutrixon Official - robots.txt
+# https://olutrixon.org
 
 User-agent: Googlebot
 Allow: /
@@ -47,7 +47,7 @@ Allow: /
 Crawl-delay: 2
 
 # Sitemaps
-Sitemap: https://lorviatex-official.com/sitemap.xml
+Sitemap: https://olutrixon.org/sitemap.xml
 
 # Disallow admin/private areas (if any)
 Disallow: /api/

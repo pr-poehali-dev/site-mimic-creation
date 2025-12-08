@@ -5,22 +5,22 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-  <!-- Homepage - Lorviatex Official Trading Platform -->
+  <!-- Homepage - Olutrixon Official Trading Platform -->
   <url>
-    <loc>https://lorviatex-official.com/</loc>
+    <loc>https://olutrixon.org/</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://cdn.poehali.dev/projects/dec2b247-100c-4952-8c09-827ed14bdcb9/files/2956cb15-c0a6-4baa-98fd-9eebdce9d458.jpg</image:loc>
-      <image:title>Lorviatex - AI-Driven Trading Platform</image:title>
-      <image:caption>Lorviatex official platform for intelligent trading solutions</image:caption>
+      <image:title>Olutrixon - AI-Driven Trading Platform</image:title>
+      <image:caption>Olutrixon official platform for intelligent trading solutions</image:caption>
     </image:image>
   </url>
 
   <!-- Home Section -->
   <url>
-    <loc>https://lorviatex-official.com/#home</loc>
+    <loc>https://olutrixon.org/#home</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -28,7 +28,7 @@
 
   <!-- FAQ Section -->
   <url>
-    <loc>https://lorviatex-official.com/#faq</loc>
+    <loc>https://olutrixon.org/#faq</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -36,7 +36,7 @@
 
   <!-- Join Form Section -->
   <url>
-    <loc>https://lorviatex-official.com/#join-form</loc>
+    <loc>https://olutrixon.org/#join-form</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -44,7 +44,7 @@
 
   <!-- Features Section -->
   <url>
-    <loc>https://lorviatex-official.com/#features</loc>
+    <loc>https://olutrixon.org/#features</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -52,7 +52,7 @@
 
   <!-- Security Section -->
   <url>
-    <loc>https://lorviatex-official.com/#security</loc>
+    <loc>https://olutrixon.org/#security</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -60,7 +60,7 @@
 
   <!-- Active Traders Section -->
   <url>
-    <loc>https://lorviatex-official.com/#traders</loc>
+    <loc>https://olutrixon.org/#traders</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
