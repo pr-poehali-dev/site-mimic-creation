@@ -1705,7 +1705,7 @@ const Index = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
                 <span className="text-2xl">💎</span>
-                <span className="text-2xl font-bold">Olutrixon</span>
+                <span className="text-2xl font-bold">Zyverium</span>
               </div>
               <p className="text-gray-400 leading-relaxed">
                 {t.footer.description}
