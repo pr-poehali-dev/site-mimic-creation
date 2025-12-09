@@ -6,12 +6,12 @@ export const translations = {
       getStarted: 'GET STARTED'
     },
     hero: {
-      title: 'Olutrixon: Intelligent Trades Executed Globally',
+      title: 'Zyverium: Intelligent Trades Executed Globally',
       volume: '980M+',
-      description: 'Experience the evolution of digital wealth with Olutrixon - the official AI-driven trading platform trusted by investors worldwide',
+      description: 'Experience the evolution of digital wealth with Zyverium - the official AI-driven trading platform trusted by investors worldwide',
       rating: '4.9/5',
       reviews: 'Based on 12,847 verified reviews',
-      formTitle: 'Join Olutrixon - Exclusive Access',
+      formTitle: 'Join Zyverium - Exclusive Access',
       trustedMembers: 'Trusted Members',
       activeInvestors: 'Active Global Investors',
       firstName: 'Enter your first name',
@@ -25,8 +25,8 @@ export const translations = {
       duplicatePhoneError: '✖ This phone number has already been registered.'
     },
     whyChoose: {
-      title: 'Why Traders Choose Olutrixon?',
-      description: 'Olutrixon equips forward-thinking investors',
+      title: 'Why Traders Choose Zyverium?',
+      description: 'Zyverium equips forward-thinking investors',
       feature1Title: 'Predictive Intelligence',
       feature1Desc: 'Outsmart volatility through AI',
       feature2Title: 'Global Expertise',
@@ -45,8 +45,8 @@ export const translations = {
     },
     features: {
       badge: 'TRUSTED PLATFORM',
-      title: 'How Olutrixon Is Redefining the Future?',
-      description: 'Olutrixon steps beyond conventional trading boundaries with AI-powered precision',
+      title: 'How Zyverium Is Redefining the Future?',
+      description: 'Zyverium steps beyond conventional trading boundaries with AI-powered precision',
       feature1Title: 'Multi-Layer Security',
       feature1Desc: 'Your capital deserves resilience',
       feature2Title: 'Ultra-Speed Execution',
@@ -57,12 +57,12 @@ export const translations = {
     },
     activeTraders: {
       title: 'Active Traders',
-      description: 'Olutrixon Traders: Trade Smarter, Grow Steadier',
+      description: 'Zyverium Traders: Trade Smarter, Grow Steadier',
       totalEarnings: 'TOTAL EARNINGS',
       pastLevel: 'in past level',
       viewProfile: 'View Profile',
       joinNow: 'JOIN NOW',
-      joinText: 'Join thousands of Olutrixon investors worldwide'
+      joinText: 'Join thousands of Zyverium investors worldwide'
     },
     security: {
       badge: 'TRUSTED & CERTIFIED',
@@ -84,7 +84,7 @@ export const translations = {
     timer: {
       badge: 'LIMITED TIME OFFER',
       title: 'Join Before This Offer Ends',
-      description: 'Start your Olutrixon trading journey',
+      description: 'Start your Zyverium trading journey',
       days: 'Days',
       hours: 'Hours',
       minutes: 'Minutes',
@@ -96,17 +96,17 @@ export const translations = {
       badge: 'FREQUENTLY ASKED',
       title: 'FAQ',
       description: 'Everything you need to know',
-      q1: 'What Is Olutrixon?',
+      q1: 'What Is Zyverium?',
       a1: 'Advanced AI-driven trading ecosystem',
       q2: 'Why Choose Platform?',
-      a2: 'Most platforms react - Olutrixon anticipates',
-      q3: 'How Does Olutrixon Protect Data?',
+      a2: 'Most platforms react - Zyverium anticipates',
+      q3: 'How Does Zyverium Protect Data?',
       a3: 'Security forms the backbone',
       q4: 'Is Platform Suitable for Beginners?',
       a4: 'Absolutely. Designed for every level'
     },
     footer: {
-      description: 'Olutrixon - Advanced AI-driven trading ecosystem trusted by investors worldwide',
+      description: 'Zyverium - Advanced AI-driven trading ecosystem trusted by investors worldwide',
       quickLinks: 'QUICK LINKS',
       home: 'Home',
       advantages: 'Advantages',
@@ -122,104 +122,104 @@ export const translations = {
       support247: '24/7 Available',
       coverage: 'COVERAGE',
       countries: '150+ Countries',
-      copyright: '© 2025 Olutrixon. All rights reserved.'
+      copyright: '© 2025 Zyverium. All rights reserved.'
     }
   },
   de: {
     nav: { home: 'Startseite', faq: 'FAQ', getStarted: 'JETZT STARTEN' },
     hero: { title: 'Intelligenter Handel', volume: '980M+', description: 'Erleben Sie die Evolution', rating: '4.9/5', reviews: 'Basierend auf 12.847 Bewertungen', formTitle: 'Exklusiven Zugang', trustedMembers: 'Mitglieder', activeInvestors: 'Aktive Investoren', firstName: 'Vorname', lastName: 'Nachname', email: 'beispiel@gmail.com', phone: 'Telefon', submit: 'JETZT BEGINNEN', submitting: 'WIRD GESENDET...', successMessage: '✅ Antrag erfolgreich!', errorMessage: '✖ Antrag fehlgeschlagen', duplicatePhoneError: '✖ Diese Telefonnummer wurde bereits registriert.' },
-    whyChoose: { title: 'Warum Olutrixon?', description: 'Olutrixon stattet Investoren aus', feature1Title: 'Intelligenz', feature1Desc: 'Durch AI', feature2Title: 'Globale Expertise', feature2Desc: 'Weltweites Netzwerk', feature3Title: 'Schnelle Ausfuhrung', feature3Desc: 'Millisekunden zahlen', startTrading: 'Handel Starten' },
+    whyChoose: { title: 'Warum Zyverium?', description: 'Zyverium stattet Investoren aus', feature1Title: 'Intelligenz', feature1Desc: 'Durch AI', feature2Title: 'Globale Expertise', feature2Desc: 'Weltweites Netzwerk', feature3Title: 'Schnelle Ausfuhrung', feature3Desc: 'Millisekunden zahlen', startTrading: 'Handel Starten' },
     liveTrading: { badge: 'EXPERTEN', title: 'Live-Handel', subtitle: 'Echtzeit-Markt', liveDashboard: 'Live-Dashboard', executedTrade: 'BTC/USDT-Handel', ago: 'vor' },
-    features: { badge: 'VERTRAUENSWURDIG', title: 'Wie Olutrixon?', description: 'Uber Grenzen hinaus', feature1Title: 'Sicherheit', feature1Desc: 'Ihr Kapital', feature2Title: 'Ultra-Schnell', feature2Desc: 'In der Welt', learnMore: 'Mehr Erfahren', ctaText: 'Bereit?', getStartedNow: 'JETZT STARTEN' },
+    features: { badge: 'VERTRAUENSWURDIG', title: 'Wie Zyverium?', description: 'Uber Grenzen hinaus', feature1Title: 'Sicherheit', feature1Desc: 'Ihr Kapital', feature2Title: 'Ultra-Schnell', feature2Desc: 'In der Welt', learnMore: 'Mehr Erfahren', ctaText: 'Bereit?', getStartedNow: 'JETZT STARTEN' },
     activeTraders: { title: 'Aktive Handler', description: 'Handeln Sie intelligenter', totalEarnings: 'GESAMTEINNAHMEN', pastLevel: 'im letzten Level', viewProfile: 'Profil Ansehen', joinNow: 'JETZT BEITRETEN', joinText: 'Treten Sie bei' },
     security: { badge: 'VERTRAUT', title: 'Vertraut Von Fachleuten', description: 'Uber 66.000 Investoren', encryption: 'Verschlusselung', encryptionDesc: 'AES-XS20', coldStorage: 'Kalte Speicherung', coldStorageDesc: 'Offline geschutzt', uptime: 'Infrastruktur', uptimeDesc: 'Redundanz', compliance: 'Cyber Assurance', complianceDesc: 'Externe Audits', reserve: 'Vermogensschutz', reserveDesc: 'Schutzfonds', certified: 'Zertifizierungen', getStartedSecurely: 'SICHER STARTEN' },
     timer: { badge: 'ZEITLICH BEGRENZT', title: 'Treten Sie Bei', description: 'Starten Sie Ihre Reise', days: 'Tage', hours: 'Stunden', minutes: 'Minuten', seconds: 'Sekunden', claimBonus: 'BONUS JETZT', spotsRemaining: 'Nur 47 Platze!' },
-    faq: { badge: 'HAUFIG GEFRAGT', title: 'FAQ', description: 'Alles uber Olutrixon', q1: 'Was Ist Olutrixon?', a1: 'Handels-Okosystem', q2: 'Warum Die Plattform?', a2: 'Olutrixon antizipiert', q3: 'Wie Schutzt Olutrixon?', a3: 'Sicherheit', q4: 'Ist Die Plattform Geeignet?', a4: 'Absolut' },
-    footer: { description: 'Handels-Okosystem', quickLinks: 'SCHNELLLINKS', home: 'Startseite', advantages: 'Vorteile', testimonials: 'Erfahrungsberichte', faq: 'FAQ', aboutUs: 'Uber Uns', contact: 'Kontakt', resources: 'RESSOURCEN', privacy: 'Datenschutz', terms: 'Nutzungsbedingungen', contactTitle: 'KONTAKT', support: 'UNTERSTUTZUNG', support247: '24/7 Verfugbar', coverage: 'ABDECKUNG', countries: '150+ Lander', copyright: '© 2025 Olutrixon' }
+    faq: { badge: 'HAUFIG GEFRAGT', title: 'FAQ', description: 'Alles uber Zyverium', q1: 'Was Ist Zyverium?', a1: 'Handels-Okosystem', q2: 'Warum Die Plattform?', a2: 'Zyverium antizipiert', q3: 'Wie Schutzt Zyverium?', a3: 'Sicherheit', q4: 'Ist Die Plattform Geeignet?', a4: 'Absolut' },
+    footer: { description: 'Handels-Okosystem', quickLinks: 'SCHNELLLINKS', home: 'Startseite', advantages: 'Vorteile', testimonials: 'Erfahrungsberichte', faq: 'FAQ', aboutUs: 'Uber Uns', contact: 'Kontakt', resources: 'RESSOURCEN', privacy: 'Datenschutz', terms: 'Nutzungsbedingungen', contactTitle: 'KONTAKT', support: 'UNTERSTUTZUNG', support247: '24/7 Verfugbar', coverage: 'ABDECKUNG', countries: '150+ Lander', copyright: '© 2025 Zyverium' }
   },
   sv: {
     nav: { home: 'Hem', faq: 'FAQ', getStarted: 'KOM IGANG' },
     hero: { title: 'Intelligenta Affarer', volume: '980M+', description: 'Upplev utvecklingen', rating: '4.9/5', reviews: 'Baserat pa 12 847 recensioner', formTitle: 'Fa Exklusiv Atkomst', trustedMembers: 'Betrodda Medlemmar', activeInvestors: 'Aktiva Investerare', firstName: 'Fornamn', lastName: 'Efternamn', email: 'exempel@gmail.com', phone: 'Telefon', submit: 'BORJA NU', submitting: 'SKICKAR...', successMessage: '✅ Ansokan skickad!', errorMessage: '✖ Kunde inte skicka', duplicatePhoneError: '✖ Detta telefonnummer har redan registrerats.' },
-    whyChoose: { title: 'Varfor Olutrixon?', description: 'Olutrixon utrustar investerare', feature1Title: 'Intelligens', feature1Desc: 'Genom AI', feature2Title: 'Global Expertis', feature2Desc: 'Varldsomspaннande natverk', feature3Title: 'Blixtsnabb', feature3Desc: 'Millisekunder', startTrading: 'Borja Handla' },
+    whyChoose: { title: 'Varfor Zyverium?', description: 'Zyverium utrustar investerare', feature1Title: 'Intelligens', feature1Desc: 'Genom AI', feature2Title: 'Global Expertis', feature2Desc: 'Varldsomspaннande natverk', feature3Title: 'Blixtsnabb', feature3Desc: 'Millisekunder', startTrading: 'Borja Handla' },
     liveTrading: { badge: 'EXPERTER', title: 'Live Handel', subtitle: 'Realtidsmarknad', liveDashboard: 'Live Dashboard', executedTrade: 'BTC/USDT-handel', ago: 'sedan' },
-    features: { badge: 'PALITLIG', title: 'Hur Olutrixon?', description: 'Ga bortom granser', feature1Title: 'Sakerhet', feature1Desc: 'Ditt kapital', feature2Title: 'Ultrahog', feature2Desc: 'I handelsvarлden', learnMore: 'Las Mer', ctaText: 'Redo?', getStartedNow: 'KOM IGANG NU' },
+    features: { badge: 'PALITLIG', title: 'Hur Zyverium?', description: 'Ga bortom granser', feature1Title: 'Sakerhet', feature1Desc: 'Ditt kapital', feature2Title: 'Ultrahog', feature2Desc: 'I handelsvarлden', learnMore: 'Las Mer', ctaText: 'Redo?', getStartedNow: 'KOM IGANG NU' },
     activeTraders: { title: 'Aktiva Handlare', description: 'Handla smartare', totalEarnings: 'TOTALA INTAKTER', pastLevel: 'pa senaste nivan', viewProfile: 'Visa Profil', joinNow: 'GA MED NU', joinText: 'Ga med' },
     security: { badge: 'BETRODD', title: 'Betrodd', description: 'Over 66 000 investerare', encryption: 'Kryptering', encryptionDesc: 'AES-XS20', coldStorage: 'Kall Lagring', coldStorageDesc: 'Offline skyddade', uptime: 'Infrastruktur', uptimeDesc: 'Redundans', compliance: 'Cybersakerhet', complianceDesc: 'Externa revisioner', reserve: 'Tillgangsskydd', reserveDesc: 'Skyddsfond', certified: 'Certifieringar', getStartedSecurely: 'KOM IGANG SAKERT' },
     timer: { badge: 'TIDSBEGRANSAT', title: 'Ga Med', description: 'Starta din resa', days: 'Dagar', hours: 'Timmar', minutes: 'Minuter', seconds: 'Sekunder', claimBonus: 'GOR ANSPRAK', spotsRemaining: 'Endast 47 platser!' },
-    faq: { badge: 'VANLIGA FRAGOR', title: 'FAQ', description: 'Allt om Olutrixon', q1: 'Vad Ar Olutrixon?', a1: 'Handelsekosystem', q2: 'Varfor Plattformen?', a2: 'Olutrixon forutser', q3: 'Hur Skyddar Olutrixon?', a3: 'Sakerhet', q4: 'Ar Plattformen Lamplig?', a4: 'Absolut' },
-    footer: { description: 'Handelsekosystem', quickLinks: 'SNABBLANKAR', home: 'Hem', advantages: 'Fordelar', testimonials: 'Vittnesmal', faq: 'FAQ', aboutUs: 'Om Oss', contact: 'Kontakt', resources: 'RESURSER', privacy: 'Integritetspolicy', terms: 'Anvandarvillkor', contactTitle: 'KONTAKT', support: 'SUPPORT', support247: '24/7 Tillganglig', coverage: 'TACKNING', countries: '150+ Lander', copyright: '© 2025 Olutrixon' }
+    faq: { badge: 'VANLIGA FRAGOR', title: 'FAQ', description: 'Allt om Zyverium', q1: 'Vad Ar Zyverium?', a1: 'Handelsekosystem', q2: 'Varfor Plattformen?', a2: 'Zyverium forutser', q3: 'Hur Skyddar Zyverium?', a3: 'Sakerhet', q4: 'Ar Plattformen Lamplig?', a4: 'Absolut' },
+    footer: { description: 'Handelsekosystem', quickLinks: 'SNABBLANKAR', home: 'Hem', advantages: 'Fordelar', testimonials: 'Vittnesmal', faq: 'FAQ', aboutUs: 'Om Oss', contact: 'Kontakt', resources: 'RESURSER', privacy: 'Integritetspolicy', terms: 'Anvandarvillkor', contactTitle: 'KONTAKT', support: 'SUPPORT', support247: '24/7 Tillganglig', coverage: 'TACKNING', countries: '150+ Lander', copyright: '© 2025 Zyverium' }
   },
   no: {
     nav: { home: 'Hjem', faq: 'FAQ', getStarted: 'KOM I GANG' },
     hero: { title: 'Intelligente Handler', volume: '980M+', description: 'Opplev utviklingen', rating: '4.9/5', reviews: 'Basert pa 12 847 anmeldelser', formTitle: 'Fa Eksklusiv Tilgang', trustedMembers: 'Klarerte Medlemmer', activeInvestors: 'Aktive Investorer', firstName: 'Fornavn', lastName: 'Etternavn', email: 'eksempel@gmail.com', phone: 'Telefon', submit: 'BEGYNN NA', submitting: 'SENDER...', successMessage: '✅ Soknad sendt!', errorMessage: '✖ Kunne ikke sende', duplicatePhoneError: '✖ Dette telefonnummeret er allerede registrert.' },
-    whyChoose: { title: 'Hvorfor Olutrixon?', description: 'Olutrixon utstyrer investorer', feature1Title: 'Intelligens', feature1Desc: 'Gjennom AI', feature2Title: 'Global Ekspertise', feature2Desc: 'Verdensomspennende nettverk', feature3Title: 'Lynrask', feature3Desc: 'Millisekunder', startTrading: 'Start Handel' },
+    whyChoose: { title: 'Hvorfor Zyverium?', description: 'Zyverium utstyrer investorer', feature1Title: 'Intelligens', feature1Desc: 'Gjennom AI', feature2Title: 'Global Ekspertise', feature2Desc: 'Verdensomspennende nettverk', feature3Title: 'Lynrask', feature3Desc: 'Millisekunder', startTrading: 'Start Handel' },
     liveTrading: { badge: 'EKSPERTER', title: 'Live Handel', subtitle: 'Sanntidsmarked', liveDashboard: 'Live Dashboard', executedTrade: 'BTC/USDT-handel', ago: 'siden' },
-    features: { badge: 'PALITELIG', title: 'Hvordan Olutrixon?', description: 'Ga utover grenser', feature1Title: 'Sikkerhet', feature1Desc: 'Din kapital', feature2Title: 'Ultrarask', feature2Desc: 'I handelsverdenen', learnMore: 'Les Mer', ctaText: 'Klar?', getStartedNow: 'BEGYNN NA' },
+    features: { badge: 'PALITELIG', title: 'Hvordan Zyverium?', description: 'Ga utover grenser', feature1Title: 'Sikkerhet', feature1Desc: 'Din kapital', feature2Title: 'Ultrarask', feature2Desc: 'I handelsverdenen', learnMore: 'Les Mer', ctaText: 'Klar?', getStartedNow: 'BEGYNN NA' },
     activeTraders: { title: 'Aktive Tradere', description: 'Handel smartere', totalEarnings: 'TOTALE INNTEKTER', pastLevel: 'pa siste niva', viewProfile: 'Vis Profil', joinNow: 'BLI MED NA', joinText: 'Bli med' },
     security: { badge: 'KLARERT', title: 'Klarert', description: 'Over 66 000 investorer', encryption: 'Kryptering', encryptionDesc: 'AES-XS20', coldStorage: 'Kald Lagring', coldStorageDesc: 'Offline beskyttet', uptime: 'Infrastruktur', uptimeDesc: 'Redundans', compliance: 'Cybersikkerhet', complianceDesc: 'Ekstern revisjon', reserve: 'Aktivabeskyttelse', reserveDesc: 'Beskyttelsesfond', certified: 'Sertifiseringer', getStartedSecurely: 'START SIKKERT' },
     timer: { badge: 'TIDSBEGRENSET', title: 'Bli Med', description: 'Start din reise', days: 'Dager', hours: 'Timer', minutes: 'Minutter', seconds: 'Sekunder', claimBonus: 'KREV BONUS', spotsRemaining: 'Bare 47 plasser!' },
-    faq: { badge: 'VANLIGE SPORSMAL', title: 'FAQ', description: 'Alt om Olutrixon', q1: 'Hva Er Olutrixon?', a1: 'Handelsokosystem', q2: 'Hvorfor Plattformen?', a2: 'Olutrixon forutser', q3: 'Hvordan Beskytter Olutrixon?', a3: 'Sikkerhet', q4: 'Er Plattformen Egnet?', a4: 'Absolutt' },
-    footer: { description: 'Handelsokosystem', quickLinks: 'HURTIGLENKER', home: 'Hjem', advantages: 'Fordeler', testimonials: 'Vitnesmal', faq: 'FAQ', aboutUs: 'Om Oss', contact: 'Kontakt', resources: 'RESSURSER', privacy: 'Personvern', terms: 'Vilkar', contactTitle: 'KONTAKT', support: 'STOTTE', support247: '24/7 Tilgjengelig', coverage: 'DEKNING', countries: '150+ Land', copyright: '© 2025 Olutrixon' }
+    faq: { badge: 'VANLIGE SPORSMAL', title: 'FAQ', description: 'Alt om Zyverium', q1: 'Hva Er Zyverium?', a1: 'Handelsokosystem', q2: 'Hvorfor Plattformen?', a2: 'Zyverium forutser', q3: 'Hvordan Beskytter Zyverium?', a3: 'Sikkerhet', q4: 'Er Plattformen Egnet?', a4: 'Absolutt' },
+    footer: { description: 'Handelsokosystem', quickLinks: 'HURTIGLENKER', home: 'Hjem', advantages: 'Fordeler', testimonials: 'Vitnesmal', faq: 'FAQ', aboutUs: 'Om Oss', contact: 'Kontakt', resources: 'RESSURSER', privacy: 'Personvern', terms: 'Vilkar', contactTitle: 'KONTAKT', support: 'STOTTE', support247: '24/7 Tilgjengelig', coverage: 'DEKNING', countries: '150+ Land', copyright: '© 2025 Zyverium' }
   },
   ja: {
     nav: { home: 'ホーム', faq: 'FAQ', getStarted: '今すぐ始める' },
     hero: { title: 'インテリジェント取引', volume: '980M+', description: '進化を体験', rating: '4.9/5', reviews: '12,847件のレビュー', formTitle: '限定アクセス', trustedMembers: '信頼できるメンバー', activeInvestors: 'アクティブな投資家', firstName: '名', lastName: '姓', email: 'example@gmail.com', phone: '電話', submit: '今すぐ始める', submitting: '送信中...', successMessage: '✅ 申請が送信されました!', errorMessage: '✖ 送信に失敗しました', duplicatePhoneError: '✖ この電話番号は既に登録されています。' },
-    whyChoose: { title: 'なぜOlutrixon?', description: 'Olutrixonは投資家を装備', feature1Title: 'インテリジェンス', feature1Desc: 'AIを通じて', feature2Title: 'グローバル専門知識', feature2Desc: '世界的ネットワーク', feature3Title: '超高速', feature3Desc: 'ミリ秒', startTrading: '取引を始める' },
+    whyChoose: { title: 'なぜZyverium?', description: 'Zyveriumは投資家を装備', feature1Title: 'インテリジェンス', feature1Desc: 'AIを通じて', feature2Title: 'グローバル専門知識', feature2Desc: '世界的ネットワーク', feature3Title: '超高速', feature3Desc: 'ミリ秒', startTrading: '取引を始める' },
     liveTrading: { badge: 'エキスパート', title: 'ライブ取引', subtitle: 'リアルタイム市場', liveDashboard: 'ライブダッシュボード', executedTrade: 'BTC/USDT取引', ago: '前' },
-    features: { badge: '信頼できる', title: 'Olutrixonとは?', description: '境界を越えて', feature1Title: 'セキュリティ', feature1Desc: 'あなたの資本', feature2Title: '超高速', feature2Desc: '取引の世界で', learnMore: '詳細', ctaText: '準備はいいですか?', getStartedNow: '今すぐ始める' },
+    features: { badge: '信頼できる', title: 'Zyveriumとは?', description: '境界を越えて', feature1Title: 'セキュリティ', feature1Desc: 'あなたの資本', feature2Title: '超高速', feature2Desc: '取引の世界で', learnMore: '詳細', ctaText: '準備はいいですか?', getStartedNow: '今すぐ始める' },
     activeTraders: { title: 'アクティブトレーダー', description: 'よりスマートに取引', totalEarnings: '総収入', pastLevel: '過去のレベルで', viewProfile: 'プロフィール表示', joinNow: '今すぐ参加', joinText: '参加する' },
     security: { badge: '信頼された', title: '信頼された', description: '66,000人以上の投資家', encryption: '暗号化', encryptionDesc: 'AES-XS20', coldStorage: 'コールドストレージ', coldStorageDesc: 'オフライン保護', uptime: 'インフラ', uptimeDesc: '冗長性', compliance: 'サイバーセキュリティ', complianceDesc: '外部監査', reserve: '資産保護', reserveDesc: '保護基金', certified: '認証', getStartedSecurely: '安全に始める' },
     timer: { badge: '期間限定', title: '参加する', description: 'あなたの旅を始める', days: '日', hours: '時間', minutes: '分', seconds: '秒', claimBonus: 'ボーナスを請求', spotsRemaining: '残り47席のみ!' },
-    faq: { badge: 'よくある質問', title: 'FAQ', description: 'Olutrixonについて', q1: 'Olutrixonとは?', a1: '取引エコシステム', q2: 'なぜプラットフォーム?', a2: 'Olutrixonは予測', q3: 'どのように保護?', a3: 'セキュリティ', q4: 'プラットフォームは適切?', a4: '絶対に' },
-    footer: { description: '取引エコシステム', quickLinks: 'クイックリンク', home: 'ホーム', advantages: '利点', testimonials: '推薦文', faq: 'FAQ', aboutUs: '私たちについて', contact: '連絡先', resources: 'リソース', privacy: 'プライバシー', terms: '利用規約', contactTitle: '連絡先', support: 'サポート', support247: '24/7利用可能', coverage: 'カバレッジ', countries: '150+カ国', copyright: '© 2025 Olutrixon' }
+    faq: { badge: 'よくある質問', title: 'FAQ', description: 'Zyveriumについて', q1: 'Zyveriumとは?', a1: '取引エコシステム', q2: 'なぜプラットフォーム?', a2: 'Zyveriumは予測', q3: 'どのように保護?', a3: 'セキュリティ', q4: 'プラットフォームは適切?', a4: '絶対に' },
+    footer: { description: '取引エコシステム', quickLinks: 'クイックリンク', home: 'ホーム', advantages: '利点', testimonials: '推薦文', faq: 'FAQ', aboutUs: '私たちについて', contact: '連絡先', resources: 'リソース', privacy: 'プライバシー', terms: '利用規約', contactTitle: '連絡先', support: 'サポート', support247: '24/7利用可能', coverage: 'カバレッジ', countries: '150+カ国', copyright: '© 2025 Zyverium' }
   },
   ko: {
     nav: { home: '홈', faq: 'FAQ', getStarted: '시작하기' },
     hero: { title: '지능형 거래', volume: '980M+', description: '진화를 경험하십시오', rating: '4.9/5', reviews: '12,847개의 리뷰', formTitle: '독점 액세스', trustedMembers: '신뢰할 수 있는 회원', activeInvestors: '활동적인 투자자', firstName: '이름', lastName: '성', email: 'example@gmail.com', phone: '전화', submit: '지금 시작', submitting: '제출 중...', successMessage: '✅ 신청서가 제출되었습니다!', errorMessage: '✖ 제출 실패', duplicatePhoneError: '✖ 이 전화번호는 이미 등록되어 있습니다.' },
-    whyChoose: { title: '왜 Olutrixon?', description: 'Olutrixon는 투자자를 장비', feature1Title: '인텔리전스', feature1Desc: 'AI를 통해', feature2Title: '글로벌 전문성', feature2Desc: '전 세계 네트워크', feature3Title: '초고속', feature3Desc: '밀리초', startTrading: '거래 시작' },
+    whyChoose: { title: '왜 Zyverium?', description: 'Zyverium는 투자자를 장비', feature1Title: '인텔리전스', feature1Desc: 'AI를 통해', feature2Title: '글로벌 전문성', feature2Desc: '전 세계 네트워크', feature3Title: '초고속', feature3Desc: '밀리초', startTrading: '거래 시작' },
     liveTrading: { badge: '전문가', title: '라이브 거래', subtitle: '실시간 시장', liveDashboard: '라이브 대시보드', executedTrade: 'BTC/USDT 거래', ago: '전' },
-    features: { badge: '신뢰할 수 있는', title: 'Olutrixon란?', description: '경계를 넘어', feature1Title: '보안', feature1Desc: '귀하의 자본', feature2Title: '초고속', feature2Desc: '거래 세계에서', learnMore: '더 알아보기', ctaText: '준비 되셨나요?', getStartedNow: '지금 시작' },
+    features: { badge: '신뢰할 수 있는', title: 'Zyverium란?', description: '경계를 넘어', feature1Title: '보안', feature1Desc: '귀하의 자본', feature2Title: '초고속', feature2Desc: '거래 세계에서', learnMore: '더 알아보기', ctaText: '준비 되셨나요?', getStartedNow: '지금 시작' },
     activeTraders: { title: '활동 거래자', description: '더 스마트하게 거래', totalEarnings: '총 수입', pastLevel: '과거 레벨에서', viewProfile: '프로필 보기', joinNow: '지금 참여', joinText: '참여하기' },
     security: { badge: '신뢰된', title: '신뢰된', description: '66,000명 이상의 투자자', encryption: '암호화', encryptionDesc: 'AES-XS20', coldStorage: '콜드 스토리지', coldStorageDesc: '오프라인 보호', uptime: '인프라', uptimeDesc: '중복성', compliance: '사이버 보안', complianceDesc: '외부 감사', reserve: '자산 보호', reserveDesc: '보호 기금', certified: '인증', getStartedSecurely: '안전하게 시작' },
     timer: { badge: '기간 한정', title: '참여하기', description: '여행을 시작하십시오', days: '일', hours: '시간', minutes: '분', seconds: '초', claimBonus: '보너스 청구', spotsRemaining: '47석만 남았습니다!' },
-    faq: { badge: '자주 묻는 질문', title: 'FAQ', description: 'Olutrixon에 대해', q1: 'Olutrixon란?', a1: '거래 생태계', q2: '왜 플랫폼?', a2: 'Olutrixon는 예측', q3: '어떻게 보호?', a3: '보안', q4: '플랫폼이 적합?', a4: '절대적으로' },
-    footer: { description: '거래 생태계', quickLinks: '빠른 링크', home: '홈', advantages: '이점', testimonials: '추천서', faq: 'FAQ', aboutUs: '회사 소개', contact: '연락처', resources: '리소스', privacy: '개인정보', terms: '이용약관', contactTitle: '연락처', support: '지원', support247: '24/7 사용 가능', coverage: '커버리지', countries: '150개 이상의 국가', copyright: '© 2025 Olutrixon' }
+    faq: { badge: '자주 묻는 질문', title: 'FAQ', description: 'Zyverium에 대해', q1: 'Zyverium란?', a1: '거래 생태계', q2: '왜 플랫폼?', a2: 'Zyverium는 예측', q3: '어떻게 보호?', a3: '보안', q4: '플랫폼이 적합?', a4: '절대적으로' },
+    footer: { description: '거래 생태계', quickLinks: '빠른 링크', home: '홈', advantages: '이점', testimonials: '추천서', faq: 'FAQ', aboutUs: '회사 소개', contact: '연락처', resources: '리소스', privacy: '개인정보', terms: '이용약관', contactTitle: '연락처', support: '지원', support247: '24/7 사용 가능', coverage: '커버리지', countries: '150개 이상의 국가', copyright: '© 2025 Zyverium' }
   },
   it: {
     nav: { home: 'Home', faq: 'FAQ', getStarted: 'INIZIA ORA' },
     hero: { title: 'Commercio Intelligente', volume: '980M+', description: 'Vivi l\'evoluzione', rating: '4.9/5', reviews: 'Basato su 12.847 recensioni', formTitle: 'Accesso Esclusivo', trustedMembers: 'Membri Fidati', activeInvestors: 'Investitori Attivi', firstName: 'Nome', lastName: 'Cognome', email: 'esempio@gmail.com', phone: 'Telefono', submit: 'INIZIA ORA', submitting: 'INVIO...', successMessage: '✅ Domanda inviata!', errorMessage: '✖ Invio fallito', duplicatePhoneError: '✖ Questo numero di telefono e gia registrato.' },
-    whyChoose: { title: 'Perche Olutrixon?', description: 'Olutrixon equipaggia gli investitori', feature1Title: 'Intelligenza', feature1Desc: 'Attraverso l\'AI', feature2Title: 'Competenza Globale', feature2Desc: 'Rete mondiale', feature3Title: 'Ultra Veloce', feature3Desc: 'Millisecondi', startTrading: 'Inizia a Fare Trading' },
+    whyChoose: { title: 'Perche Zyverium?', description: 'Zyverium equipaggia gli investitori', feature1Title: 'Intelligenza', feature1Desc: 'Attraverso l\'AI', feature2Title: 'Competenza Globale', feature2Desc: 'Rete mondiale', feature3Title: 'Ultra Veloce', feature3Desc: 'Millisecondi', startTrading: 'Inizia a Fare Trading' },
     liveTrading: { badge: 'ESPERTI', title: 'Trading dal Vivo', subtitle: 'Mercato in Tempo Reale', liveDashboard: 'Dashboard Live', executedTrade: 'Trading BTC/USDT', ago: 'fa' },
-    features: { badge: 'AFFIDABILE', title: 'Come Olutrixon?', description: 'Oltre i confini', feature1Title: 'Sicurezza', feature1Desc: 'Il tuo capitale', feature2Title: 'Ultra Veloce', feature2Desc: 'Nel mondo del trading', learnMore: 'Scopri di Piu', ctaText: 'Pronto?', getStartedNow: 'INIZIA ORA' },
+    features: { badge: 'AFFIDABILE', title: 'Come Zyverium?', description: 'Oltre i confini', feature1Title: 'Sicurezza', feature1Desc: 'Il tuo capitale', feature2Title: 'Ultra Veloce', feature2Desc: 'Nel mondo del trading', learnMore: 'Scopri di Piu', ctaText: 'Pronto?', getStartedNow: 'INIZIA ORA' },
     activeTraders: { title: 'Trader Attivi', description: 'Commercia in modo piu intelligente', totalEarnings: 'GUADAGNI TOTALI', pastLevel: 'nell\'ultimo livello', viewProfile: 'Visualizza Profilo', joinNow: 'UNISCITI ORA', joinText: 'Unisciti' },
     security: { badge: 'FIDATO', title: 'Fidato', description: 'Oltre 66.000 investitori', encryption: 'Crittografia', encryptionDesc: 'AES-XS20', coldStorage: 'Archiviazione Fredda', coldStorageDesc: 'Protetto offline', uptime: 'Infrastruttura', uptimeDesc: 'Ridondanza', compliance: 'Sicurezza Informatica', complianceDesc: 'Audit esterni', reserve: 'Protezione Patrimoniale', reserveDesc: 'Fondo di protezione', certified: 'Certificazioni', getStartedSecurely: 'INIZIA IN SICUREZZA' },
     timer: { badge: 'OFFERTA LIMITATA', title: 'Unisciti', description: 'Inizia il tuo viaggio', days: 'Giorni', hours: 'Ore', minutes: 'Minuti', seconds: 'Secondi', claimBonus: 'RICHIEDI BONUS', spotsRemaining: 'Solo 47 posti!' },
-    faq: { badge: 'DOMANDE FREQUENTI', title: 'FAQ', description: 'Tutto su Olutrixon', q1: 'Cos\'e Olutrixon?', a1: 'Ecosistema di trading', q2: 'Perche la Piattaforma?', a2: 'Olutrixon anticipa', q3: 'Come Protegge Olutrixon?', a3: 'Sicurezza', q4: 'La Piattaforma e Adatta?', a4: 'Assolutamente' },
-    footer: { description: 'Ecosistema di trading', quickLinks: 'LINK RAPIDI', home: 'Home', advantages: 'Vantaggi', testimonials: 'Testimonianze', faq: 'FAQ', aboutUs: 'Chi Siamo', contact: 'Contatti', resources: 'RISORSE', privacy: 'Privacy', terms: 'Termini', contactTitle: 'CONTATTO', support: 'SUPPORTO', support247: '24/7 Disponibile', coverage: 'COPERTURA', countries: '150+ Paesi', copyright: '© 2025 Olutrixon' }
+    faq: { badge: 'DOMANDE FREQUENTI', title: 'FAQ', description: 'Tutto su Zyverium', q1: 'Cos\'e Zyverium?', a1: 'Ecosistema di trading', q2: 'Perche la Piattaforma?', a2: 'Zyverium anticipa', q3: 'Come Protegge Zyverium?', a3: 'Sicurezza', q4: 'La Piattaforma e Adatta?', a4: 'Assolutamente' },
+    footer: { description: 'Ecosistema di trading', quickLinks: 'LINK RAPIDI', home: 'Home', advantages: 'Vantaggi', testimonials: 'Testimonianze', faq: 'FAQ', aboutUs: 'Chi Siamo', contact: 'Contatti', resources: 'RISORSE', privacy: 'Privacy', terms: 'Termini', contactTitle: 'CONTATTO', support: 'SUPPORTO', support247: '24/7 Disponibile', coverage: 'COPERTURA', countries: '150+ Paesi', copyright: '© 2025 Zyverium' }
   },
   fr: {
     nav: { home: 'Accueil', faq: 'FAQ', getStarted: 'COMMENCER' },
     hero: { title: 'Commerce Intelligent', volume: '980M+', description: 'Vivez l\'evolution', rating: '4.9/5', reviews: 'Base sur 12 847 avis', formTitle: 'Acces Exclusif', trustedMembers: 'Membres de Confiance', activeInvestors: 'Investisseurs Actifs', firstName: 'Prenom', lastName: 'Nom', email: 'exemple@gmail.com', phone: 'Telephone', submit: 'COMMENCER', submitting: 'ENVOI...', successMessage: '✅ Demande envoyee!', errorMessage: '✖ Echec de l\'envoi', duplicatePhoneError: '✖ Ce numero de telephone est deja enregistre.' },
-    whyChoose: { title: 'Pourquoi Olutrixon?', description: 'Olutrixon equipe les investisseurs', feature1Title: 'Intelligence', feature1Desc: 'Par l\'IA', feature2Title: 'Expertise Mondiale', feature2Desc: 'Reseau mondial', feature3Title: 'Ultra Rapide', feature3Desc: 'Millisecondes', startTrading: 'Commencer a Negocier' },
+    whyChoose: { title: 'Pourquoi Zyverium?', description: 'Zyverium equipe les investisseurs', feature1Title: 'Intelligence', feature1Desc: 'Par l\'IA', feature2Title: 'Expertise Mondiale', feature2Desc: 'Reseau mondial', feature3Title: 'Ultra Rapide', feature3Desc: 'Millisecondes', startTrading: 'Commencer a Negocier' },
     liveTrading: { badge: 'EXPERTS', title: 'Trading en Direct', subtitle: 'Marche en Temps Reel', liveDashboard: 'Tableau de Bord en Direct', executedTrade: 'Trading BTC/USDT', ago: 'il y a' },
-    features: { badge: 'FIABLE', title: 'Comment Olutrixon?', description: 'Au-dela des frontieres', feature1Title: 'Securite', feature1Desc: 'Votre capital', feature2Title: 'Ultra Rapide', feature2Desc: 'Dans le monde du trading', learnMore: 'En Savoir Plus', ctaText: 'Pret?', getStartedNow: 'COMMENCER MAINTENANT' },
+    features: { badge: 'FIABLE', title: 'Comment Zyverium?', description: 'Au-dela des frontieres', feature1Title: 'Securite', feature1Desc: 'Votre capital', feature2Title: 'Ultra Rapide', feature2Desc: 'Dans le monde du trading', learnMore: 'En Savoir Plus', ctaText: 'Pret?', getStartedNow: 'COMMENCER MAINTENANT' },
     activeTraders: { title: 'Traders Actifs', description: 'Negociez plus intelligemment', totalEarnings: 'GAINS TOTAUX', pastLevel: 'au dernier niveau', viewProfile: 'Voir le Profil', joinNow: 'REJOINDRE MAINTENANT', joinText: 'Rejoindre' },
     security: { badge: 'FIABLE', title: 'Fiable', description: 'Plus de 66 000 investisseurs', encryption: 'Cryptage', encryptionDesc: 'AES-XS20', coldStorage: 'Stockage a Froid', coldStorageDesc: 'Protege hors ligne', uptime: 'Infrastructure', uptimeDesc: 'Redondance', compliance: 'Cybersecurite', complianceDesc: 'Audits externes', reserve: 'Protection des Actifs', reserveDesc: 'Fonds de protection', certified: 'Certifications', getStartedSecurely: 'COMMENCER EN SECURITE' },
     timer: { badge: 'OFFRE LIMITEE', title: 'Rejoignez', description: 'Commencez votre voyage', days: 'Jours', hours: 'Heures', minutes: 'Minutes', seconds: 'Secondes', claimBonus: 'RECLAMER LE BONUS', spotsRemaining: 'Seulement 47 places!' },
-    faq: { badge: 'QUESTIONS FREQUENTES', title: 'FAQ', description: 'Tout sur Olutrixon', q1: 'Qu\'est-ce qu\'Olutrixon?', a1: 'Ecosysteme de trading', q2: 'Pourquoi la Plateforme?', a2: 'Olutrixon anticipe', q3: 'Comment Protege Olutrixon?', a3: 'Securite', q4: 'La Plateforme est-elle Adaptee?', a4: 'Absolument' },
-    footer: { description: 'Ecosysteme de trading', quickLinks: 'LIENS RAPIDES', home: 'Accueil', advantages: 'Avantages', testimonials: 'Temoignages', faq: 'FAQ', aboutUs: 'A Propos', contact: 'Contact', resources: 'RESSOURCES', privacy: 'Confidentialite', terms: 'Conditions', contactTitle: 'CONTACT', support: 'SUPPORT', support247: '24/7 Disponible', coverage: 'COUVERTURE', countries: '150+ Pays', copyright: '© 2025 Olutrixon' }
+    faq: { badge: 'QUESTIONS FREQUENTES', title: 'FAQ', description: 'Tout sur Zyverium', q1: 'Qu\'est-ce qu\'Zyverium?', a1: 'Ecosysteme de trading', q2: 'Pourquoi la Plateforme?', a2: 'Zyverium anticipe', q3: 'Comment Protege Zyverium?', a3: 'Securite', q4: 'La Plateforme est-elle Adaptee?', a4: 'Absolument' },
+    footer: { description: 'Ecosysteme de trading', quickLinks: 'LIENS RAPIDES', home: 'Accueil', advantages: 'Avantages', testimonials: 'Temoignages', faq: 'FAQ', aboutUs: 'A Propos', contact: 'Contact', resources: 'RESSOURCES', privacy: 'Confidentialite', terms: 'Conditions', contactTitle: 'CONTACT', support: 'SUPPORT', support247: '24/7 Disponible', coverage: 'COUVERTURE', countries: '150+ Pays', copyright: '© 2025 Zyverium' }
   },
   es: {
     nav: { home: 'Inicio', faq: 'FAQ', getStarted: 'EMPEZAR' },
     hero: { title: 'Comercio Inteligente', volume: '980M+', description: 'Vive la evolucion', rating: '4.9/5', reviews: 'Basado en 12,847 resenas', formTitle: 'Acceso Exclusivo', trustedMembers: 'Miembros de Confianza', activeInvestors: 'Inversores Activos', firstName: 'Nombre', lastName: 'Apellido', email: 'ejemplo@gmail.com', phone: 'Telefono', submit: 'EMPEZAR AHORA', submitting: 'ENVIANDO...', successMessage: '✅ Solicitud enviada!', errorMessage: '✖ Fallo al enviar', duplicatePhoneError: '✖ Este numero de telefono ya esta registrado.' },
-    whyChoose: { title: 'Por Que Olutrixon?', description: 'Olutrixon equipa a los inversores', feature1Title: 'Inteligencia', feature1Desc: 'A traves de IA', feature2Title: 'Experiencia Global', feature2Desc: 'Red mundial', feature3Title: 'Ultra Rapido', feature3Desc: 'Milisegundos', startTrading: 'Empezar a Operar' },
+    whyChoose: { title: 'Por Que Zyverium?', description: 'Zyverium equipa a los inversores', feature1Title: 'Inteligencia', feature1Desc: 'A traves de IA', feature2Title: 'Experiencia Global', feature2Desc: 'Red mundial', feature3Title: 'Ultra Rapido', feature3Desc: 'Milisegundos', startTrading: 'Empezar a Operar' },
     liveTrading: { badge: 'EXPERTOS', title: 'Trading en Vivo', subtitle: 'Mercado en Tiempo Real', liveDashboard: 'Panel en Vivo', executedTrade: 'Trading BTC/USDT', ago: 'hace' },
-    features: { badge: 'CONFIABLE', title: 'Como Olutrixon?', description: 'Mas alla de las fronteras', feature1Title: 'Seguridad', feature1Desc: 'Tu capital', feature2Title: 'Ultra Rapido', feature2Desc: 'En el mundo del trading', learnMore: 'Saber Mas', ctaText: 'Listo?', getStartedNow: 'EMPEZAR AHORA' },
+    features: { badge: 'CONFIABLE', title: 'Como Zyverium?', description: 'Mas alla de las fronteras', feature1Title: 'Seguridad', feature1Desc: 'Tu capital', feature2Title: 'Ultra Rapido', feature2Desc: 'En el mundo del trading', learnMore: 'Saber Mas', ctaText: 'Listo?', getStartedNow: 'EMPEZAR AHORA' },
     activeTraders: { title: 'Traders Activos', description: 'Opera mas inteligentemente', totalEarnings: 'GANANCIAS TOTALES', pastLevel: 'en el ultimo nivel', viewProfile: 'Ver Perfil', joinNow: 'UNIRSE AHORA', joinText: 'Unirse' },
     security: { badge: 'CONFIABLE', title: 'Confiable', description: 'Mas de 66,000 inversores', encryption: 'Encriptacion', encryptionDesc: 'AES-XS20', coldStorage: 'Almacenamiento Frio', coldStorageDesc: 'Protegido fuera de linea', uptime: 'Infraestructura', uptimeDesc: 'Redundancia', compliance: 'Ciberseguridad', complianceDesc: 'Auditorias externas', reserve: 'Proteccion de Activos', reserveDesc: 'Fondo de proteccion', certified: 'Certificaciones', getStartedSecurely: 'EMPEZAR DE FORMA SEGURA' },
     timer: { badge: 'OFERTA LIMITADA', title: 'Unete', description: 'Comienza tu viaje', days: 'Dias', hours: 'Horas', minutes: 'Minutos', seconds: 'Segundos', claimBonus: 'RECLAMAR BONO', spotsRemaining: 'Solo 47 lugares!' },
-    faq: { badge: 'PREGUNTAS FRECUENTES', title: 'FAQ', description: 'Todo sobre Olutrixon', q1: 'Que es Olutrixon?', a1: 'Ecosistema de trading', q2: 'Por Que la Plataforma?', a2: 'Olutrixon anticipa', q3: 'Como Protege Olutrixon?', a3: 'Seguridad', q4: 'Es Adecuada la Plataforma?', a4: 'Absolutamente' },
-    footer: { description: 'Ecosistema de trading', quickLinks: 'ENLACES RAPIDOS', home: 'Inicio', advantages: 'Ventajas', testimonials: 'Testimonios', faq: 'FAQ', aboutUs: 'Sobre Nosotros', contact: 'Contacto', resources: 'RECURSOS', privacy: 'Privacidad', terms: 'Terminos', contactTitle: 'CONTACTO', support: 'SOPORTE', support247: '24/7 Disponible', coverage: 'COBERTURA', countries: '150+ Paises', copyright: '© 2025 Olutrixon' }
+    faq: { badge: 'PREGUNTAS FRECUENTES', title: 'FAQ', description: 'Todo sobre Zyverium', q1: 'Que es Zyverium?', a1: 'Ecosistema de trading', q2: 'Por Que la Plataforma?', a2: 'Zyverium anticipa', q3: 'Como Protege Zyverium?', a3: 'Seguridad', q4: 'Es Adecuada la Plataforma?', a4: 'Absolutamente' },
+    footer: { description: 'Ecosistema de trading', quickLinks: 'ENLACES RAPIDOS', home: 'Inicio', advantages: 'Ventajas', testimonials: 'Testimonios', faq: 'FAQ', aboutUs: 'Sobre Nosotros', contact: 'Contacto', resources: 'RECURSOS', privacy: 'Privacidad', terms: 'Terminos', contactTitle: 'CONTACTO', support: 'SOPORTE', support247: '24/7 Disponible', coverage: 'COBERTURA', countries: '150+ Paises', copyright: '© 2025 Zyverium' }
   }
 };
 

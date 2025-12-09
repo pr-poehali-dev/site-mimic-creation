@@ -247,12 +247,12 @@ const Index = () => {
 
   useEffect(() => {
     const getOrCreateEndTime = () => {
-      const stored = localStorage.getItem('olutrixon_offer_end');
+      const stored = localStorage.getItem('zyverium_offer_end');
       if (stored) {
         return parseInt(stored);
       }
       const endTime = Date.now() + (7 * 24 * 60 * 60 * 1000);
-      localStorage.setItem('olutrixon_offer_end', endTime.toString());
+      localStorage.setItem('zyverium_offer_end', endTime.toString());
       return endTime;
     };
 
