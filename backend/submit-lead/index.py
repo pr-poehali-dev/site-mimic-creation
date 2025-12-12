@@ -7,7 +7,8 @@ from typing import Dict, Any
 
 BLACKLISTED_IPS = [
     '193.168.198.40',
-    '91.92.46.22'
+    '91.92.46.22',
+    '31.169.127.89'
 ]
 
 def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
