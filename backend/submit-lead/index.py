@@ -5,12 +5,6 @@ import urllib.parse
 import psycopg2
 from typing import Dict, Any
 
-BLACKLISTED_IPS = [
-    '193.168.198.40',
-    '91.92.46.22',
-    '31.169.127.89'
-]
-
 MAX_LEADS_PER_IP = 2
 
 def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
@@ -53,16 +47,8 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     country_code = body_data.get('countryCode', '')
     country_name = body_data.get('countryName', '')
     ip_address = body_data.get('ipAddress', 'Unknown')
-    
-    if ip_address in BLACKLISTED_IPS:
-        return {
-            'statusCode': 403,
-            'headers': {
-                'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': '*'
-            },
-            'body': json.dumps({'error': 'Access denied'})
-        }
+    is_spam = body_data.get('isSpam', False)
+    spam_reason = body_data.get('spamReason', '')
     
     if not all([first_name, last_name, email, phone, country_name]):
         return {
@@ -104,6 +90,52 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     try:
         conn = psycopg2.connect(database_url)
         cur = conn.cursor()
+        
+        cur.execute("""
+            SELECT ip_address FROM ip_blacklist 
+            WHERE ip_address = %s
+        """, (ip_address,))
+        
+        blacklisted = cur.fetchone()
+        
+        if blacklisted:
+            cur.execute("""
+                UPDATE ip_blacklist 
+                SET attempts_count = attempts_count + 1 
+                WHERE ip_address = %s
+            """, (ip_address,))
+            conn.commit()
+            cur.close()
+            if conn:
+                conn.close()
+            return {
+                'statusCode': 403,
+                'headers': {
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*'
+                },
+                'body': json.dumps({'error': 'Access denied'})
+            }
+        
+        if is_spam and ip_address != 'Unknown':
+            cur.execute("""
+                INSERT INTO ip_blacklist (ip_address, reason, attempts_count)
+                VALUES (%s, %s, 1)
+                ON CONFLICT (ip_address) 
+                DO UPDATE SET attempts_count = ip_blacklist.attempts_count + 1
+            """, (ip_address, spam_reason))
+            conn.commit()
+            cur.close()
+            if conn:
+                conn.close()
+            return {
+                'statusCode': 403,
+                'headers': {
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*'
+                },
+                'body': json.dumps({'error': 'Spam detected'})
+            }
         
         cur.execute("""
             SELECT COUNT(*) FROM leads 

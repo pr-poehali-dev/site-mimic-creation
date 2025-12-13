@@ -394,24 +394,6 @@ const Index = () => {
       return;
     }
 
-    // Spam protection: honeypot check
-    if (honeypot !== "") {
-      console.log("Bot detected via honeypot");
-      setSubmitMessage("Error: Invalid submission");
-      return;
-    }
-
-    // Spam protection: minimum time check (3 seconds)
-    if (formStartTime) {
-      const timeTaken = Date.now() - formStartTime;
-      if (timeTaken < 3000) {
-        console.log("Form submitted too quickly:", timeTaken, "ms");
-        setSubmitMessage("Please take your time to fill the form");
-        setIsSubmitting(false);
-        return;
-      }
-    }
-
     setIsSubmitting(true);
     setSubmitMessage("");
 
@@ -423,6 +405,24 @@ const Index = () => {
         userIp = ipData.ip;
       } catch (ipError) {
         console.log("Could not fetch IP:", ipError);
+      }
+
+      let isSpam = false;
+      let spamReason = "";
+
+      if (honeypot !== "") {
+        console.log("Bot detected via honeypot");
+        isSpam = true;
+        spamReason = "Honeypot field filled";
+      }
+
+      if (formStartTime) {
+        const timeTaken = Date.now() - formStartTime;
+        if (timeTaken < 3000) {
+          console.log("Form submitted too quickly:", timeTaken, "ms");
+          isSpam = true;
+          spamReason = spamReason ? `${spamReason}, Fast submission (${timeTaken}ms)` : `Fast submission (${timeTaken}ms)`;
+        }
       }
 
       const response = await fetch(
@@ -440,6 +440,8 @@ const Index = () => {
             countryCode: selectedCountry.code,
             countryName: selectedCountry.name,
             ipAddress: userIp,
+            isSpam,
+            spamReason,
           }),
         },
       );
