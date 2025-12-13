@@ -23,6 +23,8 @@ const Index = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState("");
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const [honeypot, setHoneypot] = useState("");
+  const [formStartTime, setFormStartTime] = useState<number | null>(null);
 
   const [timeLeft, setTimeLeft] = useState({
     days: 6,
@@ -392,6 +394,24 @@ const Index = () => {
       return;
     }
 
+    // Spam protection: honeypot check
+    if (honeypot !== "") {
+      console.log("Bot detected via honeypot");
+      setSubmitMessage("Error: Invalid submission");
+      return;
+    }
+
+    // Spam protection: minimum time check (3 seconds)
+    if (formStartTime) {
+      const timeTaken = Date.now() - formStartTime;
+      if (timeTaken < 3000) {
+        console.log("Form submitted too quickly:", timeTaken, "ms");
+        setSubmitMessage("Please take your time to fill the form");
+        setIsSubmitting(false);
+        return;
+      }
+    }
+
     setIsSubmitting(true);
     setSubmitMessage("");
 
@@ -646,10 +666,25 @@ const Index = () => {
                     </div>
 
                     <form onSubmit={handleJoinSubmit} className="space-y-4">
+                      <input
+                        type="text"
+                        name="website"
+                        value={honeypot}
+                        onChange={(e) => setHoneypot(e.target.value)}
+                        style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px' }}
+                        tabIndex={-1}
+                        autoComplete="off"
+                        aria-hidden="true"
+                      />
                       <Input
                         placeholder={t.hero.firstName}
                         value={firstName}
                         onChange={(e) => setFirstName(e.target.value)}
+                        onFocus={() => {
+                          if (!formStartTime) {
+                            setFormStartTime(Date.now());
+                          }
+                        }}
                         required
                         className="h-14 bg-gray-50 border-gray-200"
                       />
