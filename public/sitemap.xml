@@ -7,8 +7,8 @@
 
   <!-- Homepage - Axtrovien Official Trading Platform -->
   <url>
-    <loc>https://axtrovien.net/</loc>
-    <lastmod>2025-12-10</lastmod>
+    <loc>https://axtrovien-official-trade.com/</loc>
+    <lastmod>2025-12-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -20,48 +20,48 @@
 
   <!-- Home Section -->
   <url>
-    <loc>https://axtrovien.net/#home</loc>
-    <lastmod>2025-12-10</lastmod>
+    <loc>https://axtrovien-official-trade.com/#home</loc>
+    <lastmod>2025-12-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- FAQ Section -->
   <url>
-    <loc>https://axtrovien.net/#faq</loc>
-    <lastmod>2025-12-10</lastmod>
+    <loc>https://axtrovien-official-trade.com/#faq</loc>
+    <lastmod>2025-12-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Join Form Section -->
   <url>
-    <loc>https://axtrovien.net/#join-form</loc>
-    <lastmod>2025-12-10</lastmod>
+    <loc>https://axtrovien-official-trade.com/#join-form</loc>
+    <lastmod>2025-12-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Features Section -->
   <url>
-    <loc>https://axtrovien.net/#features</loc>
-    <lastmod>2025-12-10</lastmod>
+    <loc>https://axtrovien-official-trade.com/#features</loc>
+    <lastmod>2025-12-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Security Section -->
   <url>
-    <loc>https://axtrovien.net/#security</loc>
-    <lastmod>2025-12-10</lastmod>
+    <loc>https://axtrovien-official-trade.com/#security</loc>
+    <lastmod>2025-12-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Active Traders Section -->
   <url>
-    <loc>https://axtrovien.net/#traders</loc>
-    <lastmod>2025-12-10</lastmod>
+    <loc>https://axtrovien-official-trade.com/#traders</loc>
+    <lastmod>2025-12-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
