@@ -1,5 +1,5 @@
 # Mexvorin Official - robots.txt
-# https://mexvorin.net
+# https://mexvorin-official.org
 
 User-agent: Googlebot
 Allow: /
@@ -47,7 +47,7 @@ Allow: /
 Crawl-delay: 2
 
 # Sitemaps
-Sitemap: https://mexvorin.net/sitemap.xml
+Sitemap: https://mexvorin-official.org/sitemap.xml
 
 # Disallow admin/private areas (if any)
 Disallow: /api/
