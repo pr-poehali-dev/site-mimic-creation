@@ -5,7 +5,6 @@ import './index.css'
 
 const rootElement = document.getElementById("root")!;
 
-// Clear static SEO content before mounting React
-rootElement.innerHTML = '';
+document.body.classList.add('react-mounted');
 
 createRoot(rootElement).render(<App />);
