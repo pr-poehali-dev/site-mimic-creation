@@ -791,6 +791,110 @@
         box-shadow: 0 10px 35px rgba(59, 130, 246, 0.5);
       }
       
+      .countdown-section {
+        padding: 6rem 0;
+        background: linear-gradient(135deg, #E8EAF6 0%, #F3E5F5 50%, #FCE4EC 100%);
+        text-align: center;
+      }
+      
+      .countdown-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: rgba(59, 130, 246, 0.1);
+        color: #3B82F6;
+        padding: 0.75rem 1.5rem;
+        border-radius: 30px;
+        font-weight: 700;
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+        border: 2px solid rgba(59, 130, 246, 0.3);
+      }
+      
+      .countdown-title {
+        font-size: 3rem;
+        color: #3B82F6;
+        font-weight: 800;
+        margin-bottom: 1rem;
+      }
+      
+      .countdown-subtitle {
+        font-size: 1.1rem;
+        color: #64748B;
+        margin-bottom: 3rem;
+      }
+      
+      .countdown-timer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 3rem;
+      }
+      
+      .countdown-box {
+        background: white;
+        padding: 2rem 2.5rem;
+        border-radius: 20px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        min-width: 140px;
+      }
+      
+      .countdown-number {
+        font-size: 4rem;
+        font-weight: 800;
+        color: #3B82F6;
+        line-height: 1;
+        margin-bottom: 0.5rem;
+      }
+      
+      .countdown-label {
+        font-size: 0.85rem;
+        color: #64748B;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      
+      .countdown-separator {
+        font-size: 3rem;
+        color: #3B82F6;
+        font-weight: 700;
+        opacity: 0.5;
+      }
+      
+      .btn-claim-bonus {
+        background: linear-gradient(90deg, #3B82F6 0%, #2563EB 100%);
+        color: white;
+        padding: 1.5rem 3.5rem;
+        border-radius: 12px;
+        border: none;
+        font-weight: 700;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: all 0.3s;
+        box-shadow: 0 8px 30px rgba(59, 130, 246, 0.4);
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+      
+      .btn-claim-bonus:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 40px rgba(59, 130, 246, 0.5);
+      }
+      
+      .spots-remaining {
+        margin-top: 1.5rem;
+        color: #EF4444;
+        font-weight: 600;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+      
       .hero-content {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1611,6 +1715,32 @@
         .join-text {
           font-size: 1.1rem;
         }
+        
+        .countdown-title {
+          font-size: 2rem;
+        }
+        
+        .countdown-timer {
+          flex-wrap: wrap;
+        }
+        
+        .countdown-box {
+          min-width: 100px;
+          padding: 1.5rem 1.5rem;
+        }
+        
+        .countdown-number {
+          font-size: 2.5rem;
+        }
+        
+        .countdown-separator {
+          font-size: 2rem;
+        }
+        
+        .btn-claim-bonus {
+          font-size: 1rem;
+          padding: 1.2rem 2.5rem;
+        }
       }
     </style>
     <meta name="pp-name" value="site-mimic-creation">
@@ -2150,6 +2280,39 @@
       </div>
     </section>
 
+    <section class="countdown-section">
+      <div class="container">
+        <div class="countdown-badge">⏰ LIMITED TIME OFFER</div>
+        <h2 class="countdown-title">Join Before This Offer Ends</h2>
+        <p class="countdown-subtitle">Start your Mexvorin trading journey with exclusive benefits</p>
+        
+        <div class="countdown-timer">
+          <div class="countdown-box">
+            <div class="countdown-number" id="days">03</div>
+            <div class="countdown-label">DAYS</div>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="countdown-box">
+            <div class="countdown-number" id="hours">17</div>
+            <div class="countdown-label">HOURS</div>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="countdown-box">
+            <div class="countdown-number" id="minutes">12</div>
+            <div class="countdown-label">MINUTES</div>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="countdown-box">
+            <div class="countdown-number" id="seconds">54</div>
+            <div class="countdown-label">SECONDS</div>
+          </div>
+        </div>
+        
+        <button class="btn-claim-bonus">⚡ CLAIM YOUR BONUS NOW</button>
+        <div class="spots-remaining">⚠️ Only 47 spots remaining!</div>
+      </div>
+    </section>
+
     <section id="features" class="section">
       <div class="container">
         <h2 class="section-title">Powerful Features</h2>
@@ -2550,41 +2713,43 @@
         const minutesEl = document.getElementById('minutes');
         const secondsEl = document.getElementById('seconds');
         
-        setInterval(() => {
-          let seconds = parseInt(secondsEl.textContent);
-          let minutes = parseInt(minutesEl.textContent);
-          let hours = parseInt(hoursEl.textContent);
-          let days = parseInt(daysEl.textContent);
+        // Уникальное время для каждого пользователя
+        const STORAGE_KEY = 'mexvorin_countdown_end';
+        let endTime = localStorage.getItem(STORAGE_KEY);
+        
+        if (!endTime) {
+          // Установить начальное время: 3 дня 17 часов 12 минут 54 секунды от текущего момента
+          const now = new Date().getTime();
+          const duration = (3 * 24 * 60 * 60 * 1000) + (17 * 60 * 60 * 1000) + (12 * 60 * 1000) + (54 * 1000);
+          endTime = now + duration;
+          localStorage.setItem(STORAGE_KEY, endTime);
+        }
+        
+        function updateDisplay() {
+          const now = new Date().getTime();
+          const distance = parseInt(endTime) - now;
           
-          seconds--;
-          
-          if (seconds < 0) {
-            seconds = 59;
-            minutes--;
+          if (distance < 0) {
+            // Таймер истек - перезапустить
+            localStorage.removeItem(STORAGE_KEY);
+            const newEndTime = now + (3 * 24 * 60 * 60 * 1000) + (17 * 60 * 60 * 1000) + (12 * 60 * 1000) + (54 * 1000);
+            localStorage.setItem(STORAGE_KEY, newEndTime);
+            return;
           }
           
-          if (minutes < 0) {
-            minutes = 59;
-            hours--;
-          }
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
           
-          if (hours < 0) {
-            hours = 23;
-            days--;
-          }
-          
-          if (days < 0) {
-            days = 6;
-            hours = 23;
-            minutes = 59;
-            seconds = 59;
-          }
-          
-          daysEl.textContent = days;
-          hoursEl.textContent = hours;
-          minutesEl.textContent = minutes;
-          secondsEl.textContent = seconds;
-        }, 1000);
+          daysEl.textContent = String(days).padStart(2, '0');
+          hoursEl.textContent = String(hours).padStart(2, '0');
+          minutesEl.textContent = String(minutes).padStart(2, '0');
+          secondsEl.textContent = String(seconds).padStart(2, '0');
+        }
+        
+        updateDisplay();
+        setInterval(updateDisplay, 1000);
       }
       
       function handleSubmit(event) {
