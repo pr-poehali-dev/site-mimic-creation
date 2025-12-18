@@ -477,6 +477,135 @@
         color: white;
       }
       
+      .mastery-section {
+        padding: 6rem 0;
+        background: linear-gradient(135deg, #FCE4EC 0%, #F3E5F5 50%, #E8EAF6 100%);
+      }
+      
+      .mastery-header {
+        text-align: center;
+        margin-bottom: 5rem;
+      }
+      
+      .mastery-subtitle {
+        color: #64748B;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .mastery-title {
+        font-size: 3rem;
+        color: #2C2C2E;
+        font-weight: 800;
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.2;
+      }
+      
+      .mastery-steps {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 4rem;
+        flex-wrap: wrap;
+      }
+      
+      .step-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 0 0 auto;
+      }
+      
+      .step-badge {
+        position: absolute;
+        top: -15px;
+        right: 50px;
+        background: linear-gradient(135deg, #EC4899 0%, #8B5CF6 100%);
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 1.1rem;
+        box-shadow: 0 4px 15px rgba(236, 72, 153, 0.4);
+        z-index: 10;
+      }
+      
+      .step-circle {
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+        border: 3px solid transparent;
+        background-clip: padding-box;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 2.5rem;
+        text-align: center;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      }
+      
+      .step-circle::before {
+        content: '';
+        position: absolute;
+        inset: -3px;
+        border-radius: 50%;
+        padding: 3px;
+        background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 50%, #3B82F6 100%);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+      }
+      
+      .step-title {
+        font-size: 1.4rem;
+        color: #2C2C2E;
+        margin-bottom: 1rem;
+        font-weight: 700;
+      }
+      
+      .step-description {
+        color: #64748B;
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+      
+      .step-arrow {
+        position: absolute;
+        right: -110px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      
+      .step-item:last-child .step-arrow {
+        display: none;
+      }
+      
+      .mastery-description {
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      
+      .mastery-description p {
+        color: #64748B;
+        font-size: 1.05rem;
+        line-height: 1.8;
+        margin-bottom: 1.5rem;
+      }
+      
       .hero-content {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1234,6 +1363,24 @@
           font-size: 1.8rem;
         }
         
+        .mastery-title {
+          font-size: 2rem;
+        }
+        
+        .mastery-steps {
+          flex-direction: column;
+        }
+        
+        .step-circle {
+          width: 280px;
+          height: 280px;
+          padding: 2rem 1.5rem;
+        }
+        
+        .step-arrow {
+          display: none;
+        }
+        
         .certification-content {
           flex-direction: column;
           text-align: center;
@@ -1586,6 +1733,65 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mastery-section">
+      <div class="container">
+        <div class="mastery-header">
+          <div class="mastery-intro">
+            <p class="mastery-subtitle">Widen your investment horizons: tap into official trusted AI trading technology for intelligent and protected trading.</p>
+          </div>
+          <h2 class="mastery-title">Mastery through accuracy on our secure & regulated platform</h2>
+        </div>
+        
+        <div class="mastery-steps">
+          <div class="step-item">
+            <div class="step-badge">01</div>
+            <div class="step-circle">
+              <h3 class="step-title">Official trusted trading bot</h3>
+              <p class="step-description">Mexvorin stands out as an official superior trading platform. Our trusted AI bot lets you set personalized trading rules while you stay in full control.</p>
+            </div>
+            <svg class="step-arrow" viewBox="0 0 100 50" width="100" height="50">
+              <path d="M 10 25 Q 50 25 90 25" fill="none" stroke="#EC4899" stroke-width="2" marker-end="url(#arrowhead)"/>
+              <defs>
+                <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+                  <polygon points="0 0, 6 3, 0 6" fill="#EC4899"/>
+                </marker>
+              </defs>
+            </svg>
+          </div>
+          
+          <div class="step-item">
+            <div class="step-badge">02</div>
+            <div class="step-circle">
+              <h3 class="step-title">Secure & regulated platform</h3>
+              <p class="step-description">The safety of your funds is our top concern. We use the latest security protocols and protect your privacy on our established platform.</p>
+            </div>
+            <svg class="step-arrow" viewBox="0 0 100 50" width="100" height="50">
+              <path d="M 10 25 Q 50 25 90 25" fill="none" stroke="#EC4899" stroke-width="2" marker-end="url(#arrowhead2)"/>
+              <defs>
+                <marker id="arrowhead2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+                  <polygon points="0 0, 6 3, 0 6" fill="#EC4899"/>
+                </marker>
+              </defs>
+            </svg>
+          </div>
+          
+          <div class="step-item">
+            <div class="step-badge">03</div>
+            <div class="step-circle">
+              <h3 class="step-title">Trusted AI insights</h3>
+              <p class="step-description">Our intelligent algorithm delivers sharp market insights and assesses live trading signals to boost your trading success on our secure platform.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mastery-description">
+          <p>Mexvorin is a forward-thinking official platform offering a complete toolkit of features that raises the bar for both automated and manual trading. Every function is carefully crafted to elevate the trading journey on our established original platform - perfect for beginners taking their first steps or seasoned experts who require absolute accuracy.</p>
+          
+          <p>With its premier auto-trading technology, a steadfast focus on protecting user data, and dependable trading signals, Mexvorin is your trusted reliable guide in a complex market. See for yourself how our secure & regulated platform is making trading not only simpler and safer but also markedly more rewarding.</p>
         </div>
       </div>
     </section>
