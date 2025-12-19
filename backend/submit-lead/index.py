@@ -9,10 +9,10 @@ MAX_LEADS_PER_IP = 2
 
 def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     '''
-    Business: Send lead form data to Telegram group with numbering and country info
-    Args: event with httpMethod, body containing firstName, lastName, email, phone, countryCode, countryName
-          context with request_id
-    Returns: HTTP response with success status
+    Отправка заявки с формы в Telegram группу
+    Args: event с данными формы (firstName, lastName, email, phone, countryCode, countryName, ipAddress)
+          context с request_id
+    Returns: HTTP ответ с результатом отправки
     '''
     method: str = event.get('httpMethod', 'GET')
     
@@ -208,22 +208,20 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     full_name = f"{first_name} {last_name}"
     phone_formatted = f"{country_code}{phone}"
     
-    message = f"""🚀 Lead! №{lead_id_formatted}
-
-Name: `{first_name}`
-Last name: `{last_name}`
-SUMMA: `{full_name}`
-Email: `{email}`
-Phone number: +`{phone_formatted.lstrip('+')}`
+    message = f"""LEAD!
+Name: {first_name}
+Last name: {last_name}
+SUMMA: {full_name}
+Email: {email}
+Phone number: +{phone_formatted.lstrip('+')}
 Country: {country_name}
-Platform: mexvorin-official.org
-IP Address: `{ip_address}`"""
+Platform: mexvorin.io
+IP Address: {ip_address}"""
     
     telegram_url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
     data = urllib.parse.urlencode({
         'chat_id': chat_id,
-        'text': message,
-        'parse_mode': 'Markdown'
+        'text': message
     }).encode('utf-8')
     
     req = urllib.request.Request(telegram_url, data=data)
