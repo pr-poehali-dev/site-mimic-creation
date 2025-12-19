@@ -4,16 +4,16 @@ class I18n {
     this.currentLang = 'en';
     this.translations = {};
     this.supportedLanguages = {
-      'en': { name: 'English', flag: '🇬🇧' },
-      'de': { name: 'Deutsch', flag: '🇩🇪' },
-      'sv': { name: 'Svenska', flag: '🇸🇪' },
-      'no': { name: 'Norsk', flag: '🇳🇴' },
-      'fi': { name: 'Suomi', flag: '🇫🇮' },
-      'it': { name: 'Italiano', flag: '🇮🇹' },
-      'fr': { name: 'Français', flag: '🇫🇷' },
-      'es': { name: 'Español', flag: '🇪🇸' },
-      'ko': { name: '한국어', flag: '🇰🇷' },
-      'ja': { name: '日本語', flag: '🇯🇵' }
+      'en': { name: 'English', flag: 'gb', flagEmoji: '🇬🇧' },
+      'de': { name: 'Deutsch', flag: 'de', flagEmoji: '🇩🇪' },
+      'sv': { name: 'Svenska', flag: 'se', flagEmoji: '🇸🇪' },
+      'no': { name: 'Norsk', flag: 'no', flagEmoji: '🇳🇴' },
+      'fi': { name: 'Suomi', flag: 'fi', flagEmoji: '🇫🇮' },
+      'it': { name: 'Italiano', flag: 'it', flagEmoji: '🇮🇹' },
+      'fr': { name: 'Français', flag: 'fr', flagEmoji: '🇫🇷' },
+      'es': { name: 'Español', flag: 'es', flagEmoji: '🇪🇸' },
+      'ko': { name: '한국어', flag: 'kr', flagEmoji: '🇰🇷' },
+      'ja': { name: '日本語', flag: 'jp', flagEmoji: '🇯🇵' }
     };
     
     this.ipLanguageMap = {
@@ -232,7 +232,12 @@ class I18n {
     const langButton = document.querySelector('.lang-selector');
     if (langButton) {
       const lang = this.supportedLanguages[this.currentLang];
-      langButton.innerHTML = `${lang.flag} ${lang.name} ▼`;
+      langButton.innerHTML = `
+        <img src="https://flagcdn.com/w40/${lang.flag}.png" 
+             alt="${lang.name}" 
+             style="width: 20px; height: 15px; object-fit: cover; border-radius: 2px;">
+        ${lang.name} ▼
+      `;
     }
   }
 
@@ -289,8 +294,13 @@ class I18n {
         border-radius: 8px; cursor: pointer; font-size: 0.95rem; transition: background 0.2s;
         text-align: left;
       `;
-      option.innerHTML = `<span style="font-size: 1.8rem;">${lang.flag}</span> <span style="font-weight: 500;">${lang.name}</span>`;
-      console.log(`Adding language option: ${code} - ${lang.flag} ${lang.name}`);
+      option.innerHTML = `
+        <img src="https://flagcdn.com/w40/${lang.flag}.png" 
+             alt="${lang.name}" 
+             style="width: 24px; height: 18px; object-fit: cover; border-radius: 2px;">
+        <span style="font-weight: 500;">${lang.name}</span>
+      `;
+      console.log(`Adding language option: ${code} - flag:${lang.flag} ${lang.name}`);
       
       option.addEventListener('mouseenter', () => {
         if (code !== this.currentLang) option.style.background = '#F5F7FA';
