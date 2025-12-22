@@ -399,10 +399,24 @@ const Index = () => {
 
     try {
       let userIp = "Unknown";
+      let detectedCountryCode = selectedCountry.countryCode;
+      let detectedCountryName = selectedCountry.name;
+      
       try {
         const ipResponse = await fetch("https://api.ipify.org?format=json");
         const ipData = await ipResponse.json();
         userIp = ipData.ip;
+        
+        try {
+          const geoResponse = await fetch(`https://ipapi.co/${ipData.ip}/json/`);
+          const geoData = await geoResponse.json();
+          if (geoData.country_code) {
+            detectedCountryCode = geoData.country_code;
+            detectedCountryName = geoData.country_name || selectedCountry.name;
+          }
+        } catch (geoError) {
+          console.log("Could not fetch country:", geoError);
+        }
       } catch (ipError) {
         console.log("Could not fetch IP:", ipError);
       }
@@ -437,8 +451,10 @@ const Index = () => {
             lastName,
             email,
             phone,
-            countryCode: selectedCountry.code,
-            countryName: selectedCountry.name,
+            experience: "Not specified",
+            message: "",
+            countryCode: detectedCountryCode,
+            countryName: detectedCountryName,
             ipAddress: userIp,
             isSpam,
             spamReason,
