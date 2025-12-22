@@ -2178,7 +2178,7 @@ const Index = () => {
                   
                   <div className="mt-6 bg-white p-6 rounded-xl border-2 border-gray-100">
                     <img
-                      src="https://cdn.poehali.dev/files/photo_2025-12-22_21-50-25.jpg"
+                      src="https://cdn.poehali.dev/files/photo_2025-12-22_21-50-25.jpg?v=2"
                       alt="ISO 27001:2005 Certificate - Haltrovex"
                       className="w-full max-w-2xl mx-auto rounded-lg shadow-lg"
                     />
