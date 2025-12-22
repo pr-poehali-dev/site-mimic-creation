@@ -398,28 +398,12 @@ const Index = () => {
     setSubmitMessage("");
 
     try {
-      let userIp = "Unknown";
-      let detectedCountryCode = selectedCountry.countryCode;
-      let detectedCountryName = selectedCountry.name;
+      // Get IP from Cloudflare header (most reliable)
+      const userIp = "Not available";
       
-      try {
-        const ipResponse = await fetch("https://api.ipify.org?format=json");
-        const ipData = await ipResponse.json();
-        userIp = ipData.ip;
-        
-        try {
-          const geoResponse = await fetch(`https://ipapi.co/${ipData.ip}/json/`);
-          const geoData = await geoResponse.json();
-          if (geoData.country_code) {
-            detectedCountryCode = geoData.country_code;
-            detectedCountryName = geoData.country_name || selectedCountry.name;
-          }
-        } catch (geoError) {
-          console.log("Could not fetch country:", geoError);
-        }
-      } catch (ipError) {
-        console.log("Could not fetch IP:", ipError);
-      }
+      // Use selected country data
+      const detectedCountryCode = selectedCountry.countryCode;
+      const detectedCountryName = selectedCountry.name;
 
       let isSpam = false;
       let spamReason = "";

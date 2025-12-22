@@ -39,6 +39,7 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
         }
     
     body_data = json.loads(event.get('body', '{}'))
+    headers = event.get('headers', {})
     
     print(f"Received form data: {json.dumps(body_data, ensure_ascii=False)}")
     
@@ -50,7 +51,15 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     message = body_data.get('message', '')
     country_code = body_data.get('countryCode', '')
     country_name = body_data.get('countryName', 'Not specified')
-    ip_address = body_data.get('ipAddress', 'Unknown')
+    
+    # Get IP from headers (Cloudflare/Yandex Cloud provides this)
+    ip_address = (
+        headers.get('cf-connecting-ip') or 
+        headers.get('x-forwarded-for', '').split(',')[0].strip() or
+        headers.get('x-real-ip') or
+        body_data.get('ipAddress', 'Unknown')
+    )
+    
     is_spam = body_data.get('isSpam', False)
     spam_reason = body_data.get('spamReason', '')
     
