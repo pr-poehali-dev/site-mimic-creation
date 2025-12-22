@@ -439,6 +439,22 @@ const Index = () => {
         }
       }
 
+      const payload = {
+        firstName,
+        lastName,
+        email,
+        phone,
+        experience: "Not specified",
+        message: "",
+        countryCode: detectedCountryCode,
+        countryName: detectedCountryName,
+        ipAddress: userIp,
+        isSpam,
+        spamReason,
+      };
+      
+      console.log("Sending to backend:", payload);
+      
       const response = await fetch(
         "https://functions.poehali.dev/cd2bcaff-b8c8-4c3e-b0e7-6ad1796e1cf4",
         {
@@ -446,19 +462,7 @@ const Index = () => {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({
-            firstName,
-            lastName,
-            email,
-            phone,
-            experience: "Not specified",
-            message: "",
-            countryCode: detectedCountryCode,
-            countryName: detectedCountryName,
-            ipAddress: userIp,
-            isSpam,
-            spamReason,
-          }),
+          body: JSON.stringify(payload),
         },
       );
 
