@@ -130,7 +130,6 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
 📱 Телефон: +{phone_formatted.lstrip('+')}
 🌍 Страна: {country_name} ({country_code})
 🌐 IP: {ip_address}
-💬 Сообщение: {message if message else 'Hero form submission'}
 🆔 Заявка: #{lead_id_formatted}"""
     
     telegram_url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
